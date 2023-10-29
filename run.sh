@@ -487,10 +487,9 @@ run_nim() {
 run_nim_con() {
     echo "Running Nim Concurrent" &&
         cd ./nim_con &&
-        echo "using ${nproc} threads" &&
         if [ -z "$appendToFile" ]; then # only build on 5k run
             nimble -y install -d &&
-                ./buildopt.sh ${nproc}
+                ./build.sh clang
         fi &&
         if [ $HYPER == 1 ]; then
             capture "Nim Concurrent" hyperfine -r $runs -w $warmup --show-output "./build/related_con"
@@ -733,6 +732,18 @@ run_clojure() {
     check_output "related_posts_clj.json"
 }
 
+run_ruby() {
+    echo "Running ruby" &&
+        cd ./ruby &&
+        if [ $HYPER == 1 ]; then
+            capture "Ruby" hyperfine -r $runs -w $warmup --show-output "ruby related.rb"
+        else
+            command ${time} -f '%es %Mk' ruby related.rb
+        fi
+
+    check_output "related_posts_ruby.json"
+}
+
 check_output() {
     cd ..
 
@@ -937,6 +948,10 @@ elif [ "$first_arg" = "clj" ]; then
 
     run_clojure
 
+elif [ "$first_arg" = "ruby" ]; then
+
+    run_ruby
+
 elif [ "$first_arg" = "all" ]; then
 
     echo -e "Running all\n" &&
@@ -970,7 +985,7 @@ elif [ "$first_arg" = "all" ]; then
         run_java_graal || echo -e "\n" &&
         run_java_graal_con || echo -e "\n" &&
         run_nim || echo -e "\n" &&
-        #run_nim_con || echo -e "\n" && #too slow, excluded for now
+        run_nim_con || echo -e "\n" &&
         run_fsharp || echo -e "\n" &&
         run_fsharp_con || echo -e "\n" &&
         run_fsharp_con_aot || echo -e "\n" &&
@@ -983,6 +998,7 @@ elif [ "$first_arg" = "all" ]; then
         run_lua || echo -e "\n" &&
         run_ocaml || echo -e "\n" &&
         run_erlang || echo -e "\n" &&
+        run_ruby || echo -e "\n" &&
         echo -e "Finished running all\n"
 
 elif [ "$first_arg" = "clean" ]; then

@@ -1,31 +1,26 @@
-import std/[hashes, monotimes, sequtils, sugar, times]
-import pkg/[jsony, malebolgia, xxhash]
-import ./related_con/fixedtable
+import std/[cpuinfo, hashes, monotimes, tables, times]
+import pkg/[jsony, taskpools, xxhash]
+
+const N: Positive = 5
 
 type
-  Digest = tuple[tagCol: TagCol, tagMap: TagMap]
-
   Post = object
     `"_id"`: string
     title: string
     tags : seq[Tag]
 
-  Posts = seq[ref Post]
-
   PostIndex = int
 
   PostOut = object
     `"_id"`: string
-    tags : seq[Tag]
-    related : Posts
+    tags : ptr seq[Tag]
+    related: TopN
 
   RelCount = uint8
 
-  RelMeta = tuple[index: PostIndex, count: RelCount]
+  RelMeta = tuple[count: RelCount, index: PostIndex]
 
-  Tag = distinct string
-
-  TagCol = seq[seq[Tag]]
+  Tag = string
 
   TagMap = Table[Tag, seq[PostIndex]]
 
@@ -35,110 +30,119 @@ type
     groups: seq[TaskGroup]
     size: int
 
-  Top5 = array[5, RelMeta]
+  TopN = array[N, ptr Post]
 
 const
   input = "../posts.json"
   output = "../related_posts_nim_con.json"
 
-func `$`(x: Tag): string {.used.} =
-  x.string
+func hash(x: Tag): Hash {.inline, used.} =
+  cast[Hash](XXH3_64bits(x))
 
-func `==`(x, y: Tag): bool {.borrow.}
+func `[]`(t: TagMap, key: Tag): lent seq[PostIndex] =
+  tables.`[]`(t.addr[], key)
 
 func `[]`(groups: TaskGroups, i: int): TaskGroup =
   groups.groups[i]
 
-func hash(x: Tag): Hash {.used.} =
-  cast[Hash](XXH3_64bits(x.string))
+proc dumpHook(s: var string, v: ptr) {.inline, used.} =
+  if v == nil:
+    s.add("null")
+  else:
+    s.dumpHook(v[])
 
-func init(T: typedesc[Digest], posts: Posts): T =
-  var
-    tagCol = newSeqOfCap[seq[Tag]](posts.len)
-    tagMap = initTable[Tag, seq[PostIndex]](100)
-
+func init(T: typedesc[TagMap], posts: seq[Post]): T =
+  result = initTable[Tag, seq[PostIndex]](100)
   for i, post in posts:
-    tagCol.add(post.tags)
     for tag in post.tags:
-      tagMap.withValue(tag, val):
+      result.withValue(tag, val):
         val[].add(i)
       do:
-        tagMap[tag] = @[i]
+        result[tag] = @[i]
 
-  (tagCol: tagCol, tagMap: tagMap)
-
-func init(T: typedesc[TaskGroups], taskCount: int): T =
-  var groups = newSeqOfCap[TaskGroup](ThreadPoolSize)
-  let step = taskCount div ThreadPoolSize
-  for i in 0..<ThreadPoolSize:
-    groups.add((first: step * i, last: step * (i + 1) - 1))
-    if i == ThreadPoolSize - 1:
-      groups[i].last = groups[i].last + taskCount mod ThreadPoolSize
-
+func init(T: typedesc[TaskGroups], taskCount, groupCount: int): T =
+  var groups = newSeqOfCap[TaskGroup](groupCount)
+  let width = taskCount div groupCount
+  for i in 0..<groupCount:
+    groups.add((first: width * i, last: width * (i + 1) - 1))
+    if i == groupCount - 1:
+      groups[i].last = groups[i].last + taskCount mod groupCount
   T(groups: groups, size: groups.len)
 
+proc readPosts(path: string): seq[Post] =
+  path.readFile.fromJson(seq[Post])
+
+proc writePosts(path: string, posts: seq[PostOut]) =
+  path.writeFile(posts.toJson)
+
+{.push inline.}
+
 proc tally(
-    relCounts: var seq[RelCount],
-    index: PostIndex,
-    tagCol: ptr TagCol,
-    tagMap: ptr TagMap) =
-  for tag in tagCol[][index]:
-    for relIndex in tagMap[][tag]:
-      inc relCounts[relIndex]
+    counts: var seq[RelCount],
+    posts: ptr seq[Post],
+    tagMap: ptr TagMap,
+    index: PostIndex) =
+  for tag in posts[index].tags:
+    try:
+      for relIndex in tagMap[][tag]:
+        inc counts[relIndex]
+    except KeyError as e:
+      raise (ref Defect)(msg: e.msg)
+  counts[index] = 0 # remove self
 
-  relCounts[index] = 0 # remove self
-
-proc top5(relCounts: seq[RelCount], top5: var Top5) =
-  for index, count in relCounts:
-    if count > top5[4].count:
-      top5[4] = (index: index, count: count)
-      for rank in countdown(3, 0):
-        if count > top5[rank].count:
-          swap(top5[rank + 1], top5[rank])
+proc topN(
+    counts: var seq[RelCount],
+    posts: ptr seq[Post],
+    metas: var array[N, RelMeta],
+    related: var TopN) =
+  for index, count in counts:
+    let rank = N - 1
+    if count > metas[rank].count:
+      metas[rank].count = count
+      metas[rank].index = index
+      when N >= 2:
+        for rank in countdown(N - 2, 0):
+          if count > metas[rank].count:
+            swap(metas[rank + 1], metas[rank])
+    counts[index] = 0
+  for rank in 0..<N:
+    related[rank] = addr posts[metas[rank].index]
+    metas[rank].count = 0
+    metas[rank].index = 0
 
 proc process(
     group: TaskGroup,
-    tagCol: ptr TagCol,
+    posts: ptr seq[Post],
     tagMap: ptr TagMap,
-    top5s: ptr seq[Top5]) =
+    postsOut: ptr seq[PostOut]) =
+  var
+    counts = newSeq[RelCount](posts[].len)
+    metas: array[N, RelMeta]
   for index in (group.first)..(group.last):
-    var relCounts = newSeq[RelCount](tagCol[].len)
-    relCounts.tally(index, tagCol, tagMap)
-    relCounts.top5(top5s[][index])
+    counts.tally(posts, tagMap, index)
+    postsOut[index].`"_id"` = posts[index].`"_id"`
+    postsOut[index].tags = addr posts[index].tags
+    counts.topN(posts, metas, postsOut[index].related)
 
-proc readPosts(path: string): Posts =
-  path.readFile.fromJson(Posts)
-
-func resolve(posts: Posts, top5s: seq[Top5]): seq[PostOut] =
-  collect(newSeqOfCap(posts.len)):
-    for index, top5 in top5s:
-      PostOut(
-        `"_id"`: posts[index].`"_id"`,
-        tags: posts[index].tags,
-        related: top5.mapIt(posts[it.index]))
+{.pop.}
 
 proc main() =
   let
     posts = input.readPosts
     t0 = getMonotime()
-    groups = TaskGroups.init(posts.len)
-    (tagCol, tagMap) = Digest.init(posts)
-
+    tagMap = TagMap.init(posts)
+    threadCount = countProcessors()
+    groups = TaskGroups.init(posts.len, threadCount)
   var
-    top5s = newSeq[Top5](posts.len)
-    tasks = createMaster()
-
-  tasks.awaitAll:
-    for i in 0..<groups.size:
-      tasks.spawn groups[i].process(addr tagCol, addr tagMap, addr top5s)
-
-  let
-    postsOut = posts.resolve(top5s)
-    time = (getMonotime() - t0).inMicroseconds / 1000
-
-  # echo "Threads: ", ThreadPoolSize, ", Chan size: ", FixedChanSize
+    pool = Taskpool.new(threadCount)
+    postsOut = newSeq[PostOut](posts.len)
+  for i in 0..<groups.size:
+    pool.spawn groups[i].process(addr posts, addr tagMap, addr postsOut)
+  pool.syncAll
+  let time = (getMonotime() - t0).inMicroseconds / 1000
+  pool.shutdown
+  output.writePosts(postsOut)
   echo "Processing time (w/o IO): ", time, "ms"
-  output.writeFile(postsOut.toJson)
 
 when isMainModule:
   main()
