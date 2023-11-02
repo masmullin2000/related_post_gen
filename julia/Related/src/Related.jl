@@ -41,15 +41,12 @@ function fastmaxindex!(xs::Vector{T}, topn, maxn, maxv) where {T}
 end
 
 function related(posts)
-    Ts = (UInt8, UInt16, UInt32, UInt64)
-    i = findfirst(T -> length(posts) < typemax(T), Ts)
-    return related(Ts[i], posts)
-end
-function related(::Type{T}, posts) where {T}
+    T = UInt32
     topn = 5
     # key is every possible "tag" used in all posts
     # value is indicies of all "post"s that used this tag
     tagmap = Dict{String,Vector{T}}()
+    sizehint!(tagmap, 100)
     for (idx, post) in enumerate(posts)
         for tag in post.tags
             tags = get!(() -> T[], tagmap, tag)
@@ -89,7 +86,7 @@ end
 function main()
     json_string = read(@__DIR__()*"/../../../posts.json", String)
     posts = JSON3.read(json_string, Vector{PostData})
-    fake_posts = fill(posts[1], length(posts))
+    fake_posts = first(posts, 1000)
     related(fake_posts) #warmup
 
     start = now()
@@ -100,5 +97,7 @@ function main()
         JSON3.write(f, all_related_posts)
     end
 end
+
+main()
 
 end # module Related

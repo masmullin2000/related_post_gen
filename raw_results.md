@@ -1,211 +1,211 @@
 Go:
 
 	Benchmark 1: ./related
-	Processing time (w/o IO): 24.25828ms
-	Processing time (w/o IO): 24.356082ms
-	Processing time (w/o IO): 24.21728ms
-	Processing time (w/o IO): 25.063994ms
-	Processing time (w/o IO): 25.364598ms
-	Processing time (w/o IO): 24.482584ms
-	Processing time (w/o IO): 24.25428ms
-	Processing time (w/o IO): 24.365082ms
-	Processing time (w/o IO): 24.375083ms
-	Processing time (w/o IO): 24.164579ms
-	Processing time (w/o IO): 24.097178ms
-	Processing time (w/o IO): 24.439184ms
-	Processing time (w/o IO): 26.241012ms
-	  Time (mean ± σ):      64.7 ms ±   2.0 ms    [User: 60.2 ms, System: 11.4 ms]
-	  Range (min … max):    61.3 ms …  66.9 ms    10 runs
+	Processing time (w/o IO): 23.007049ms
+	Processing time (w/o IO): 22.740545ms
+	Processing time (w/o IO): 22.571144ms
+	Processing time (w/o IO): 22.746846ms
+	Processing time (w/o IO): 22.629945ms
+	Processing time (w/o IO): 22.609244ms
+	Processing time (w/o IO): 22.581944ms
+	Processing time (w/o IO): 22.591944ms
+	Processing time (w/o IO): 22.709345ms
+	Processing time (w/o IO): 22.912147ms
+	Processing time (w/o IO): 22.678245ms
+	Processing time (w/o IO): 22.804147ms
+	Processing time (w/o IO): 22.721045ms
+	  Time (mean ± σ):      62.7 ms ±   1.7 ms    [User: 60.4 ms, System: 9.5 ms]
+	  Range (min … max):    60.5 ms …  65.9 ms    10 runs
 	 
 Go Concurrent:
 
 	Benchmark 1: ./related_concurrent
-	Processing time (w/o IO): 11.612982ms
-	Processing time (w/o IO): 13.207507ms
-	Processing time (w/o IO): 12.331993ms
-	Processing time (w/o IO): 11.780085ms
-	Processing time (w/o IO): 11.713584ms
-	Processing time (w/o IO): 11.783285ms
-	Processing time (w/o IO): 11.786285ms
-	Processing time (w/o IO): 11.798285ms
-	Processing time (w/o IO): 11.837986ms
-	Processing time (w/o IO): 14.061421ms
-	Processing time (w/o IO): 11.727084ms
-	Processing time (w/o IO): 11.916387ms
-	Processing time (w/o IO): 13.694414ms
-	  Time (mean ± σ):      52.1 ms ±   1.4 ms    [User: 75.9 ms, System: 16.0 ms]
-	  Range (min … max):    50.7 ms …  54.9 ms    10 runs
+	Processing time (w/o IO): 11.714227ms
+	Processing time (w/o IO): 11.651926ms
+	Processing time (w/o IO): 12.08233ms
+	Processing time (w/o IO): 12.206132ms
+	Processing time (w/o IO): 12.212732ms
+	Processing time (w/o IO): 14.84286ms
+	Processing time (w/o IO): 11.824828ms
+	Processing time (w/o IO): 12.03573ms
+	Processing time (w/o IO): 13.88595ms
+	Processing time (w/o IO): 11.416323ms
+	Processing time (w/o IO): 11.807927ms
+	Processing time (w/o IO): 11.726327ms
+	Processing time (w/o IO): 11.860128ms
+	  Time (mean ± σ):      53.2 ms ±   1.9 ms    [User: 81.1 ms, System: 11.9 ms]
+	  Range (min … max):    50.2 ms …  55.7 ms    10 runs
 	 
 Rust:
 
 	Benchmark 1: ./target/release/rust
-	Processing time (w/o IO): 23.442775ms
-	Processing time (w/o IO): 23.459276ms
-	Processing time (w/o IO): 23.476875ms
-	Processing time (w/o IO): 23.433575ms
-	Processing time (w/o IO): 23.421375ms
-	Processing time (w/o IO): 23.385575ms
-	Processing time (w/o IO): 23.368174ms
-	Processing time (w/o IO): 23.407975ms
-	Processing time (w/o IO): 23.502076ms
-	Processing time (w/o IO): 23.443475ms
-	Processing time (w/o IO): 23.613778ms
-	Processing time (w/o IO): 23.399975ms
-	Processing time (w/o IO): 23.425675ms
-	  Time (mean ± σ):      38.4 ms ±   0.7 ms    [User: 31.8 ms, System: 6.7 ms]
-	  Range (min … max):    38.0 ms …  40.2 ms    10 runs
+	Processing time (w/o IO): 23.647551ms
+	Processing time (w/o IO): 24.218257ms
+	Processing time (w/o IO): 23.501549ms
+	Processing time (w/o IO): 23.502749ms
+	Processing time (w/o IO): 23.474049ms
+	Processing time (w/o IO): 24.255357ms
+	Processing time (w/o IO): 23.454049ms
+	Processing time (w/o IO): 23.47215ms
+	Processing time (w/o IO): 23.430448ms
+	Processing time (w/o IO): 23.446549ms
+	Processing time (w/o IO): 23.420549ms
+	Processing time (w/o IO): 23.432849ms
+	Processing time (w/o IO): 23.459749ms
+	  Time (mean ± σ):      38.9 ms ±   0.5 ms    [User: 33.0 ms, System: 5.8 ms]
+	  Range (min … max):    38.5 ms …  40.2 ms    10 runs
 	 
 Rust Concurrent:
 
 	Benchmark 1: ./target/release/rust_rayon
-	Processing time (w/o IO): 12.895197ms
-	Processing time (w/o IO): 12.129785ms
-	Processing time (w/o IO): 12.174686ms
-	Processing time (w/o IO): 12.145585ms
-	Processing time (w/o IO): 12.125785ms
-	Processing time (w/o IO): 12.190085ms
-	Processing time (w/o IO): 12.173786ms
-	Processing time (w/o IO): 12.071284ms
-	Processing time (w/o IO): 12.061284ms
-	Processing time (w/o IO): 12.181586ms
-	Processing time (w/o IO): 12.171185ms
-	Processing time (w/o IO): 12.157785ms
-	Processing time (w/o IO): 12.182585ms
-	  Time (mean ± σ):      28.8 ms ±   0.6 ms    [User: 32.2 ms, System: 8.3 ms]
-	  Range (min … max):    28.2 ms …  29.6 ms    10 runs
+	Processing time (w/o IO): 12.379117ms
+	Processing time (w/o IO): 12.62782ms
+	Processing time (w/o IO): 12.595619ms
+	Processing time (w/o IO): 12.580819ms
+	Processing time (w/o IO): 13.031323ms
+	Processing time (w/o IO): 12.165215ms
+	Processing time (w/o IO): 12.209015ms
+	Processing time (w/o IO): 12.227616ms
+	Processing time (w/o IO): 12.235416ms
+	Processing time (w/o IO): 12.231515ms
+	Processing time (w/o IO): 12.240516ms
+	Processing time (w/o IO): 12.159515ms
+	Processing time (w/o IO): 12.204315ms
+	  Time (mean ± σ):      29.7 ms ±   0.6 ms    [User: 30.4 ms, System: 11.2 ms]
+	  Range (min … max):    29.1 ms …  31.0 ms    10 runs
 	 
 D:
 
 	Benchmark 1: ./related
-	Processing time (w/o IO): 25.212ms
-	Processing time (w/o IO): 25.092ms
-	Processing time (w/o IO): 24.622ms
-	Processing time (w/o IO): 24.55ms
-	Processing time (w/o IO): 24.757ms
-	Processing time (w/o IO): 24.896ms
-	Processing time (w/o IO): 25.014ms
-	Processing time (w/o IO): 24.054ms
-	Processing time (w/o IO): 25.709ms
-	Processing time (w/o IO): 24.877ms
-	Processing time (w/o IO): 24.846ms
-	Processing time (w/o IO): 24.799ms
-	Processing time (w/o IO): 25.144ms
-	  Time (mean ± σ):     104.6 ms ±   1.0 ms    [User: 97.7 ms, System: 8.4 ms]
-	  Range (min … max):   103.3 ms … 107.0 ms    10 runs
+	Processing time (w/o IO): 25.854ms
+	Processing time (w/o IO): 27.3ms
+	Processing time (w/o IO): 25.472ms
+	Processing time (w/o IO): 25.044ms
+	Processing time (w/o IO): 24.979ms
+	Processing time (w/o IO): 25.193ms
+	Processing time (w/o IO): 27.747ms
+	Processing time (w/o IO): 25.827ms
+	Processing time (w/o IO): 25.289ms
+	Processing time (w/o IO): 24.997ms
+	Processing time (w/o IO): 25.063ms
+	Processing time (w/o IO): 25.203ms
+	Processing time (w/o IO): 24.528ms
+	  Time (mean ± σ):     107.2 ms ±   4.7 ms    [User: 97.3 ms, System: 10.6 ms]
+	  Range (min … max):   104.5 ms … 119.5 ms    10 runs
 	 
 D Concurrent:
 
 	Benchmark 1: ./related_concurrent
-	Processing time (w/o IO): 12.368ms
-	Processing time (w/o IO): 13.041ms
-	Processing time (w/o IO): 13.086ms
-	Processing time (w/o IO): 12.64ms
-	Processing time (w/o IO): 12.719ms
-	Processing time (w/o IO): 12.686ms
-	Processing time (w/o IO): 13.414ms
-	Processing time (w/o IO): 13.451ms
-	Processing time (w/o IO): 13.598ms
-	Processing time (w/o IO): 13.455ms
-	Processing time (w/o IO): 12.24ms
-	Processing time (w/o IO): 13.605ms
-	Processing time (w/o IO): 12.063ms
-	  Time (mean ± σ):      91.2 ms ±   1.0 ms    [User: 107.3 ms, System: 8.0 ms]
-	  Range (min … max):    90.0 ms …  93.5 ms    10 runs
+	Processing time (w/o IO): 13.105ms
+	Processing time (w/o IO): 12.951ms
+	Processing time (w/o IO): 12.513ms
+	Processing time (w/o IO): 12.507ms
+	Processing time (w/o IO): 13.182ms
+	Processing time (w/o IO): 13.173ms
+	Processing time (w/o IO): 13.393ms
+	Processing time (w/o IO): 13.44ms
+	Processing time (w/o IO): 12.567ms
+	Processing time (w/o IO): 13.3ms
+	Processing time (w/o IO): 14.166ms
+	Processing time (w/o IO): 12.799ms
+	Processing time (w/o IO): 11.775ms
+	  Time (mean ± σ):      91.7 ms ±   0.9 ms    [User: 107.3 ms, System: 8.4 ms]
+	  Range (min … max):    90.5 ms …  93.3 ms    10 runs
 	 
 C++:
 
 	Benchmark 1: ./main
-	Processing time (w/o IO): 25 ms
-	Processing time (w/o IO): 25 ms
-	Processing time (w/o IO): 25 ms
-	Processing time (w/o IO): 25 ms
-	Processing time (w/o IO): 25 ms
-	Processing time (w/o IO): 25 ms
-	Processing time (w/o IO): 27 ms
-	Processing time (w/o IO): 25 ms
-	Processing time (w/o IO): 25 ms
-	Processing time (w/o IO): 25 ms
-	Processing time (w/o IO): 25 ms
-	Processing time (w/o IO): 25 ms
-	Processing time (w/o IO): 25 ms
-	  Time (mean ± σ):     226.8 ms ±   3.0 ms    [User: 194.9 ms, System: 31.8 ms]
-	  Range (min … max):   222.7 ms … 231.6 ms    10 runs
+	Processing time (w/o IO): 23 ms
+	Processing time (w/o IO): 23 ms
+	Processing time (w/o IO): 24 ms
+	Processing time (w/o IO): 23 ms
+	Processing time (w/o IO): 23 ms
+	Processing time (w/o IO): 23 ms
+	Processing time (w/o IO): 23 ms
+	Processing time (w/o IO): 23 ms
+	Processing time (w/o IO): 24 ms
+	Processing time (w/o IO): 23 ms
+	Processing time (w/o IO): 23 ms
+	Processing time (w/o IO): 23 ms
+	Processing time (w/o IO): 23 ms
+	  Time (mean ± σ):     224.2 ms ±   2.0 ms    [User: 194.1 ms, System: 29.9 ms]
+	  Range (min … max):   221.2 ms … 227.2 ms    10 runs
 	 
 C++ Concurrent:
 
 	Benchmark 1: ./main_con
 	Processing time (w/o IO): 12 ms
+	Processing time (w/o IO): 14 ms
+	Processing time (w/o IO): 14 ms
+	Processing time (w/o IO): 14 ms
+	Processing time (w/o IO): 12 ms
 	Processing time (w/o IO): 12 ms
 	Processing time (w/o IO): 14 ms
 	Processing time (w/o IO): 13 ms
 	Processing time (w/o IO): 14 ms
-	Processing time (w/o IO): 12 ms
-	Processing time (w/o IO): 13 ms
-	Processing time (w/o IO): 15 ms
 	Processing time (w/o IO): 13 ms
 	Processing time (w/o IO): 14 ms
-	Processing time (w/o IO): 12 ms
 	Processing time (w/o IO): 13 ms
 	Processing time (w/o IO): 13 ms
-	  Time (mean ± σ):     228.7 ms ±   3.4 ms    [User: 229.6 ms, System: 33.2 ms]
-	  Range (min … max):   226.2 ms … 237.9 ms    10 runs
+	  Time (mean ± σ):     232.7 ms ±   2.4 ms    [User: 233.5 ms, System: 33.5 ms]
+	  Range (min … max):   226.9 ms … 235.0 ms    10 runs
 	 
 Python:
 
 	Benchmark 1: python3 ./related.py
-	Processing time (w/o IO): 1.478s
-	Processing time (w/o IO): 1.460s
-	Processing time (w/o IO): 1.458s
-	Processing time (w/o IO): 1.472s
-	Processing time (w/o IO): 1.466s
-	Processing time (w/o IO): 1.478s
-	Processing time (w/o IO): 1.471s
+	Processing time (w/o IO): 1.476s
 	Processing time (w/o IO): 1.465s
-	Processing time (w/o IO): 1.466s
 	Processing time (w/o IO): 1.462s
+	Processing time (w/o IO): 1.457s
+	Processing time (w/o IO): 1.466s
+	Processing time (w/o IO): 1.466s
+	Processing time (w/o IO): 1.455s
+	Processing time (w/o IO): 1.471s
+	Processing time (w/o IO): 1.460s
 	Processing time (w/o IO): 1.463s
+	Processing time (w/o IO): 1.462s
 	Processing time (w/o IO): 1.464s
-	Processing time (w/o IO): 1.458s
-	  Time (mean ± σ):      1.534 s ±  0.006 s    [User: 1.518 s, System: 0.016 s]
-	  Range (min … max):    1.524 s …  1.545 s    10 runs
+	Processing time (w/o IO): 1.462s
+	  Time (mean ± σ):      1.531 s ±  0.004 s    [User: 1.514 s, System: 0.017 s]
+	  Range (min … max):    1.523 s …  1.539 s    10 runs
 	 
 Numpy:
 
 	Benchmark 1: python3 ./related_np.py
-	Processing time (w/o IO): 350.7ms
-	Processing time (w/o IO): 351.9ms
-	Processing time (w/o IO): 354.0ms
-	Processing time (w/o IO): 353.3ms
+	Processing time (w/o IO): 351.1ms
+	Processing time (w/o IO): 352.9ms
+	Processing time (w/o IO): 352.6ms
 	Processing time (w/o IO): 352.2ms
+	Processing time (w/o IO): 351.5ms
+	Processing time (w/o IO): 352.3ms
+	Processing time (w/o IO): 350.4ms
+	Processing time (w/o IO): 351.8ms
 	Processing time (w/o IO): 351.9ms
-	Processing time (w/o IO): 356.6ms
-	Processing time (w/o IO): 353.1ms
-	Processing time (w/o IO): 352.5ms
-	Processing time (w/o IO): 351.7ms
-	Processing time (w/o IO): 351.4ms
-	Processing time (w/o IO): 350.6ms
-	Processing time (w/o IO): 351.6ms
-	  Time (mean ± σ):     697.1 ms ± 176.9 ms    [User: 832.1 ms, System: 428.0 ms]
-	  Range (min … max):   637.9 ms … 1200.4 ms    10 runs
+	Processing time (w/o IO): 357.6ms
+	Processing time (w/o IO): 353.5ms
+	Processing time (w/o IO): 353.3ms
+	Processing time (w/o IO): 352.0ms
+	  Time (mean ± σ):     652.0 ms ±  38.4 ms    [User: 852.2 ms, System: 400.6 ms]
+	  Range (min … max):   632.0 ms … 755.5 ms    10 runs
 	 
 Crystal:
 
 	Benchmark 1: ./crystal
-	Processing time (w/o IO): 60.56053ms
-	Processing time (w/o IO): 60.209724ms
-	Processing time (w/o IO): 60.005522ms
-	Processing time (w/o IO): 60.653232ms
-	Processing time (w/o IO): 60.076623ms
-	Processing time (w/o IO): 60.225425ms
-	Processing time (w/o IO): 60.719732ms
-	Processing time (w/o IO): 60.190724ms
-	Processing time (w/o IO): 59.943521ms
-	Processing time (w/o IO): 60.207724ms
-	Processing time (w/o IO): 60.303026ms
-	Processing time (w/o IO): 60.042622ms
-	Processing time (w/o IO): 60.944436ms
-	  Time (mean ± σ):     108.8 ms ±   1.2 ms    [User: 99.8 ms, System: 9.0 ms]
-	  Range (min … max):   107.1 ms … 111.4 ms    10 runs
+	Processing time (w/o IO): 60.206521ms
+	Processing time (w/o IO): 60.494623ms
+	Processing time (w/o IO): 60.397066ms
+	Processing time (w/o IO): 60.312241ms
+	Processing time (w/o IO): 60.605645ms
+	Processing time (w/o IO): 60.329042ms
+	Processing time (w/o IO): 60.215141ms
+	Processing time (w/o IO): 60.712646ms
+	Processing time (w/o IO): 60.14134ms
+	Processing time (w/o IO): 60.292442ms
+	Processing time (w/o IO): 59.964039ms
+	Processing time (w/o IO): 60.429043ms
+	Processing time (w/o IO): 60.762846ms
+	  Time (mean ± σ):     110.1 ms ±   1.4 ms    [User: 100.0 ms, System: 10.1 ms]
+	  Range (min … max):   108.0 ms … 113.2 ms    10 runs
 	 
 Zig:
 
@@ -223,36 +223,32 @@ Zig:
 	Processing time (w/o IO): 23ms
 	Processing time (w/o IO): 23ms
 	Processing time (w/o IO): 23ms
-	  Time (mean ± σ):      69.7 ms ±   0.8 ms    [User: 63.9 ms, System: 5.9 ms]
-	  Range (min … max):    69.0 ms …  71.3 ms    10 runs
+	  Time (mean ± σ):      70.1 ms ±   0.3 ms    [User: 63.4 ms, System: 6.7 ms]
+	  Range (min … max):    69.7 ms …  70.9 ms    10 runs
 	 
 Julia:
 
 	Benchmark 1: julia --project=Related -e "using Related; main()"
-	Processing time (w/o IO): 37 milliseconds
-	Processing time (w/o IO): 37 milliseconds
-	Processing time (w/o IO): 37 milliseconds
-	Processing time (w/o IO): 37 milliseconds
-	Processing time (w/o IO): 37 milliseconds
-	Processing time (w/o IO): 38 milliseconds
-	Processing time (w/o IO): 37 milliseconds
-	Processing time (w/o IO): 37 milliseconds
-	Processing time (w/o IO): 37 milliseconds
-	Processing time (w/o IO): 37 milliseconds
-	Processing time (w/o IO): 37 milliseconds
-	Processing time (w/o IO): 37 milliseconds
-	Processing time (w/o IO): 38 milliseconds
-	  Time (mean ± σ):      1.007 s ±  0.012 s    [User: 0.887 s, System: 0.224 s]
-	  Range (min … max):    0.989 s …  1.025 s    10 runs
+	Processing time (w/o IO): 24 milliseconds
+	Processing time (w/o IO): 24 milliseconds
+	Processing time (w/o IO): 31 milliseconds
+	Processing time (w/o IO): 24 milliseconds
+	Processing time (w/o IO): 31 milliseconds
+	Processing time (w/o IO): 23 milliseconds
+	Processing time (w/o IO): 24 milliseconds
+	Processing time (w/o IO): 31 milliseconds
+	Processing time (w/o IO): 31 milliseconds
+	Processing time (w/o IO): 31 milliseconds
+	Processing time (w/o IO): 31 milliseconds
+	Processing time (w/o IO): 24 milliseconds
+	Processing time (w/o IO): 24 milliseconds
+	  Time (mean ± σ):      3.250 s ±  0.037 s    [User: 3.101 s, System: 0.252 s]
+	  Range (min … max):    3.202 s …  3.328 s    10 runs
 	 
 Julia HO:
 
 	Benchmark 1: julia --project=RelatedHO -e "using RelatedHO; main()"
-	Processing time (w/o IO): 8 milliseconds
-	Processing time (w/o IO): 8 milliseconds
-	Processing time (w/o IO): 8 milliseconds
-	Processing time (w/o IO): 8 milliseconds
-	Processing time (w/o IO): 8 milliseconds
+	Processing time (w/o IO): 9 milliseconds
 	Processing time (w/o IO): 8 milliseconds
 	Processing time (w/o IO): 8 milliseconds
 	Processing time (w/o IO): 8 milliseconds
@@ -260,91 +256,94 @@ Julia HO:
 	Processing time (w/o IO): 8 milliseconds
 	Processing time (w/o IO): 8 milliseconds
 	Processing time (w/o IO): 9 milliseconds
-	Processing time (w/o IO): 9 milliseconds
-	  Time (mean ± σ):     997.5 ms ±  14.1 ms    [User: 893.5 ms, System: 207.6 ms]
-	  Range (min … max):   982.2 ms … 1019.4 ms    10 runs
+	Processing time (w/o IO): 8 milliseconds
+	Processing time (w/o IO): 8 milliseconds
+	Processing time (w/o IO): 8 milliseconds
+	Processing time (w/o IO): 8 milliseconds
+	Processing time (w/o IO): 8 milliseconds
+	  Time (mean ± σ):      1.030 s ±  0.026 s    [User: 0.900 s, System: 0.233 s]
+	  Range (min … max):    0.999 s …  1.081 s    10 runs
 	 
 Julia Concurrent:
 
 	Benchmark 1: julia --threads=auto --project=RelatedCon -e "using RelatedCon; main()"
+	Processing time (w/o IO): 15 milliseconds
+	Processing time (w/o IO): 13 milliseconds
+	Processing time (w/o IO): 15 milliseconds
 	Processing time (w/o IO): 16 milliseconds
-	Processing time (w/o IO): 18 milliseconds
-	Processing time (w/o IO): 18 milliseconds
-	Processing time (w/o IO): 17 milliseconds
-	Processing time (w/o IO): 18 milliseconds
+	Processing time (w/o IO): 12 milliseconds
+	Processing time (w/o IO): 12 milliseconds
+	Processing time (w/o IO): 15 milliseconds
+	Processing time (w/o IO): 15 milliseconds
+	Processing time (w/o IO): 13 milliseconds
+	Processing time (w/o IO): 12 milliseconds
+	Processing time (w/o IO): 15 milliseconds
+	Processing time (w/o IO): 12 milliseconds
 	Processing time (w/o IO): 16 milliseconds
-	Processing time (w/o IO): 16 milliseconds
-	Processing time (w/o IO): 17 milliseconds
-	Processing time (w/o IO): 18 milliseconds
-	Processing time (w/o IO): 18 milliseconds
-	Processing time (w/o IO): 17 milliseconds
-	Processing time (w/o IO): 16 milliseconds
-	Processing time (w/o IO): 17 milliseconds
-	  Time (mean ± σ):     467.3 ms ±  14.9 ms    [User: 409.7 ms, System: 208.3 ms]
-	  Range (min … max):   446.5 ms … 487.0 ms    10 runs
+	  Time (mean ± σ):      3.445 s ±  0.039 s    [User: 4.847 s, System: 0.280 s]
+	  Range (min … max):    3.377 s …  3.497 s    10 runs
 	 
 Odin:
 
 	Benchmark 1: ./related
-	Processing time (w/o IO):  47.64274ms
-	Processing time (w/o IO):  47.483236ms
-	Processing time (w/o IO):  47.388134ms
-	Processing time (w/o IO):  47.337432ms
-	Processing time (w/o IO):  47.131628ms
-	Processing time (w/o IO):  47.873745ms
-	Processing time (w/o IO):  47.772243ms
-	Processing time (w/o IO):  47.036726ms
-	Processing time (w/o IO):  47.339933ms
-	Processing time (w/o IO):  47.361834ms
-	Processing time (w/o IO):  47.167129ms
-	Processing time (w/o IO):  47.620839ms
-	Processing time (w/o IO):  47.450236ms
-	  Time (mean ± σ):     264.6 ms ±   1.0 ms    [User: 255.0 ms, System: 9.5 ms]
-	  Range (min … max):   263.3 ms … 266.9 ms    10 runs
+	Processing time (w/o IO):  48.562127ms
+	Processing time (w/o IO):  48.192018ms
+	Processing time (w/o IO):  47.86041ms
+	Processing time (w/o IO):  48.114317ms
+	Processing time (w/o IO):  48.26742ms
+	Processing time (w/o IO):  48.032615ms
+	Processing time (w/o IO):  48.377123ms
+	Processing time (w/o IO):  48.352122ms
+	Processing time (w/o IO):  48.006314ms
+	Processing time (w/o IO):  47.940412ms
+	Processing time (w/o IO):  48.447276ms
+	Processing time (w/o IO):  48.578178ms
+	Processing time (w/o IO):  48.157872ms
+	  Time (mean ± σ):     267.1 ms ±   0.9 ms    [User: 259.2 ms, System: 7.9 ms]
+	  Range (min … max):   266.1 ms … 269.2 ms    10 runs
 	 
 Vlang:
 
 	Benchmark 1: ./related
-	Processing time (w/o IO): 49.150ms
-	Processing time (w/o IO): 48.692ms
-	Processing time (w/o IO): 49.116ms
-	Processing time (w/o IO): 49.321ms
-	Processing time (w/o IO): 48.651ms
-	Processing time (w/o IO): 48.305ms
-	Processing time (w/o IO): 48.576ms
-	Processing time (w/o IO): 48.613ms
-	Processing time (w/o IO): 48.701ms
-	Processing time (w/o IO): 48.734ms
-	Processing time (w/o IO): 48.686ms
-	Processing time (w/o IO): 49.008ms
-	Processing time (w/o IO): 48.767ms
-	  Time (mean ± σ):     376.9 ms ±   3.2 ms    [User: 348.7 ms, System: 28.1 ms]
-	  Range (min … max):   373.5 ms … 383.8 ms    10 runs
+	Processing time (w/o IO): 49.198ms
+	Processing time (w/o IO): 48.531ms
+	Processing time (w/o IO): 49.184ms
+	Processing time (w/o IO): 48.512ms
+	Processing time (w/o IO): 49.182ms
+	Processing time (w/o IO): 49.216ms
+	Processing time (w/o IO): 48.579ms
+	Processing time (w/o IO): 49.209ms
+	Processing time (w/o IO): 49.625ms
+	Processing time (w/o IO): 48.637ms
+	Processing time (w/o IO): 49.192ms
+	Processing time (w/o IO): 48.676ms
+	Processing time (w/o IO): 49.346ms
+	  Time (mean ± σ):     382.8 ms ±   2.9 ms    [User: 352.4 ms, System: 30.2 ms]
+	  Range (min … max):   379.9 ms … 388.9 ms    10 runs
 	 
 Dart VM:
 
 	Benchmark 1: dart related.dart
+	Processing time (w/o IO): 177ms
+	Processing time (w/o IO): 168ms
+	Processing time (w/o IO): 169ms
+	Processing time (w/o IO): 169ms
+	Processing time (w/o IO): 169ms
+	Processing time (w/o IO): 169ms
+	Processing time (w/o IO): 156ms
+	Processing time (w/o IO): 163ms
+	Processing time (w/o IO): 169ms
+	Processing time (w/o IO): 177ms
 	Processing time (w/o IO): 170ms
 	Processing time (w/o IO): 169ms
-	Processing time (w/o IO): 169ms
-	Processing time (w/o IO): 168ms
-	Processing time (w/o IO): 169ms
 	Processing time (w/o IO): 170ms
-	Processing time (w/o IO): 168ms
-	Processing time (w/o IO): 170ms
-	Processing time (w/o IO): 168ms
-	Processing time (w/o IO): 169ms
-	Processing time (w/o IO): 178ms
-	Processing time (w/o IO): 168ms
-	Processing time (w/o IO): 169ms
-	  Time (mean ± σ):     547.8 ms ±  14.6 ms    [User: 658.4 ms, System: 105.5 ms]
-	  Range (min … max):   531.9 ms … 573.0 ms    10 runs
+	  Time (mean ± σ):     543.9 ms ±   8.4 ms    [User: 638.6 ms, System: 122.0 ms]
+	  Range (min … max):   531.0 ms … 555.5 ms    10 runs
 	 
 Dart AOT:
 
 	Benchmark 1: ./related
 	Processing time (w/o IO): 130ms
-	Processing time (w/o IO): 131ms
 	Processing time (w/o IO): 130ms
 	Processing time (w/o IO): 129ms
 	Processing time (w/o IO): 130ms
@@ -353,224 +352,231 @@ Dart AOT:
 	Processing time (w/o IO): 130ms
 	Processing time (w/o IO): 130ms
 	Processing time (w/o IO): 130ms
+	Processing time (w/o IO): 129ms
+	Processing time (w/o IO): 129ms
 	Processing time (w/o IO): 130ms
 	Processing time (w/o IO): 130ms
-	Processing time (w/o IO): 130ms
-	  Time (mean ± σ):     255.8 ms ±   2.2 ms    [User: 240.4 ms, System: 19.7 ms]
-	  Range (min … max):   252.6 ms … 259.2 ms    10 runs
+	  Time (mean ± σ):     255.2 ms ±   1.4 ms    [User: 237.4 ms, System: 22.2 ms]
+	  Range (min … max):   252.9 ms … 257.0 ms    10 runs
 	 
 Swift:
 
 	Benchmark 1: ./.build/release/related
-	Processing time (w/o IO): 50.701022148132324ms
-	Processing time (w/o IO): 50.935983657836914ms
-	Processing time (w/o IO): 50.68206787109375ms
-	Processing time (w/o IO): 50.99010467529297ms
-	Processing time (w/o IO): 50.48799514770508ms
-	Processing time (w/o IO): 50.53210258483887ms
-	Processing time (w/o IO): 50.57096481323242ms
-	Processing time (w/o IO): 50.61209201812744ms
-	Processing time (w/o IO): 50.837039947509766ms
-	Processing time (w/o IO): 50.86803436279297ms
-	Processing time (w/o IO): 50.7889986038208ms
-	Processing time (w/o IO): 51.13697052001953ms
-	Processing time (w/o IO): 51.05793476104736ms
-	  Time (mean ± σ):     409.5 ms ±   7.0 ms    [User: 351.0 ms, System: 40.7 ms]
-	  Range (min … max):   399.9 ms … 421.4 ms    10 runs
+	Processing time (w/o IO): 50.79495906829834ms
+	Processing time (w/o IO): 51.15699768066406ms
+	Processing time (w/o IO): 51.02503299713135ms
+	Processing time (w/o IO): 50.92298984527588ms
+	Processing time (w/o IO): 51.57196521759033ms
+	Processing time (w/o IO): 51.52308940887451ms
+	Processing time (w/o IO): 51.30207538604736ms
+	Processing time (w/o IO): 50.84705352783203ms
+	Processing time (w/o IO): 54.11100387573242ms
+	Processing time (w/o IO): 51.834940910339355ms
+	Processing time (w/o IO): 51.79798603057861ms
+	Processing time (w/o IO): 52.14393138885498ms
+	Processing time (w/o IO): 56.31899833679199ms
+	  Time (mean ± σ):     419.3 ms ±   7.8 ms    [User: 366.0 ms, System: 35.5 ms]
+	  Range (min … max):   410.2 ms … 431.7 ms    10 runs
 	 
 Swift Concurrent:
 
 	Benchmark 1: ./.build/release/related
-	Processing time (w/o IO): 31.005414ms
-	Processing time (w/o IO): 32.124139ms
-	Processing time (w/o IO): 32.082738ms
-	Processing time (w/o IO): 31.560726ms
-	Processing time (w/o IO): 32.048738ms
-	Processing time (w/o IO): 31.942936ms
-	Processing time (w/o IO): 31.430324ms
-	Processing time (w/o IO): 32.170441ms
-	Processing time (w/o IO): 32.234743ms
-	Processing time (w/o IO): 30.929112ms
-	Processing time (w/o IO): 31.388022ms
-	Processing time (w/o IO): 32.343845ms
-	Processing time (w/o IO): 31.420323ms
-	  Time (mean ± σ):     402.5 ms ±  39.5 ms    [User: 422.1 ms, System: 40.3 ms]
-	  Range (min … max):   383.0 ms … 514.5 ms    10 runs
+	Processing time (w/o IO): 32.812278ms
+	Processing time (w/o IO): 31.388261ms
+	Processing time (w/o IO): 33.795389ms
+	Processing time (w/o IO): 31.363761ms
+	Processing time (w/o IO): 32.911878ms
+	Processing time (w/o IO): 31.077758ms
+	Processing time (w/o IO): 31.441862ms
+	Processing time (w/o IO): 32.21087ms
+	Processing time (w/o IO): 31.132459ms
+	Processing time (w/o IO): 31.514983ms
+	Processing time (w/o IO): 30.755368ms
+	Processing time (w/o IO): 32.887914ms
+	Processing time (w/o IO): 31.902592ms
+	  Time (mean ± σ):     396.1 ms ±   4.0 ms    [User: 419.7 ms, System: 46.1 ms]
+	  Range (min … max):   391.3 ms … 404.3 ms    10 runs
 	 
 JS (Node):
 
 	Benchmark 1: node node.js
-	Processing time (w/o IO): 128ms
-	Processing time (w/o IO): 130ms
-	Processing time (w/o IO): 125ms
-	Processing time (w/o IO): 130ms
+	Processing time (w/o IO): 132ms
+	Processing time (w/o IO): 127ms
+	Processing time (w/o IO): 135ms
+	Processing time (w/o IO): 191ms
 	Processing time (w/o IO): 126ms
-	Processing time (w/o IO): 131ms
-	Processing time (w/o IO): 126ms
-	Processing time (w/o IO): 131ms
-	Processing time (w/o IO): 131ms
+	Processing time (w/o IO): 132ms
+	Processing time (w/o IO): 185ms
 	Processing time (w/o IO): 131ms
 	Processing time (w/o IO): 131ms
-	Processing time (w/o IO): 128ms
 	Processing time (w/o IO): 133ms
-	  Time (mean ± σ):     304.4 ms ±   2.5 ms    [User: 297.1 ms, System: 62.2 ms]
-	  Range (min … max):   299.4 ms … 308.1 ms    10 runs
+	Processing time (w/o IO): 132ms
+	Processing time (w/o IO): 127ms
+	Processing time (w/o IO): 125ms
+	  Time (mean ± σ):     316.0 ms ±  24.4 ms    [User: 305.1 ms, System: 67.4 ms]
+	  Range (min … max):   298.2 ms … 364.6 ms    10 runs
 	 
 JS (Bun):
 
 	Benchmark 1: bun bun.js
-	Processing time (w/o IO): 118ms
-	Processing time (w/o IO): 132ms
-	Processing time (w/o IO): 125ms
-	Processing time (w/o IO): 112ms
-	Processing time (w/o IO): 124ms
 	Processing time (w/o IO): 117ms
-	Processing time (w/o IO): 104ms
-	Processing time (w/o IO): 116ms
+	Processing time (w/o IO): 120ms
+	Processing time (w/o IO): 126ms
 	Processing time (w/o IO): 123ms
-	Processing time (w/o IO): 117ms
+	Processing time (w/o IO): 122ms
+	Processing time (w/o IO): 119ms
+	Processing time (w/o IO): 126ms
+	Processing time (w/o IO): 126ms
+	Processing time (w/o IO): 133ms
+	Processing time (w/o IO): 118ms
+	Processing time (w/o IO): 119ms
 	Processing time (w/o IO): 125ms
-	Processing time (w/o IO): 124ms
-	Processing time (w/o IO): 103ms
-	  Time (mean ± σ):     172.9 ms ±   7.7 ms    [User: 190.7 ms, System: 33.8 ms]
-	  Range (min … max):   159.7 ms … 180.9 ms    10 runs
+	Processing time (w/o IO): 120ms
+	  Time (mean ± σ):     180.7 ms ±   4.0 ms    [User: 200.3 ms, System: 34.8 ms]
+	  Range (min … max):   175.7 ms … 188.9 ms    10 runs
 	 
 JS (Deno):
 
 	Benchmark 1: deno run --allow-read --allow-write deno.js
+	Processing time (w/o IO): 137ms
 	Processing time (w/o IO): 197ms
-	Processing time (w/o IO): 133ms
-	Processing time (w/o IO): 137ms
-	Processing time (w/o IO): 137ms
-	Processing time (w/o IO): 136ms
-	Processing time (w/o IO): 198ms
-	Processing time (w/o IO): 198ms
-	Processing time (w/o IO): 141ms
-	Processing time (w/o IO): 193ms
+	Processing time (w/o IO): 190ms
+	Processing time (w/o IO): 138ms
+	Processing time (w/o IO): 199ms
 	Processing time (w/o IO): 139ms
-	Processing time (w/o IO): 136ms
-	Processing time (w/o IO): 140ms
+	Processing time (w/o IO): 198ms
+	Processing time (w/o IO): 200ms
+	Processing time (w/o IO): 199ms
 	Processing time (w/o IO): 137ms
-	  Time (mean ± σ):     224.0 ms ±  28.6 ms    [User: 216.9 ms, System: 31.9 ms]
-	  Range (min … max):   202.6 ms … 268.6 ms    10 runs
+	Processing time (w/o IO): 137ms
+	Processing time (w/o IO): 138ms
+	Processing time (w/o IO): 138ms
+	  Time (mean ± σ):     232.3 ms ±  31.0 ms    [User: 226.6 ms, System: 30.5 ms]
+	  Range (min … max):   206.7 ms … 270.0 ms    10 runs
 	 
 Java (JIT):
 
 	Benchmark 1: java -XX:+UseSerialGC -jar ./target/main.jar
-	Processing time (w/o IO): 55 ms
-	Processing time (w/o IO): 55 ms
-	Processing time (w/o IO): 52 ms
-	Processing time (w/o IO): 52 ms
-	Processing time (w/o IO): 52 ms
-	Processing time (w/o IO): 52 ms
-	Processing time (w/o IO): 55 ms
-	Processing time (w/o IO): 55 ms
-	Processing time (w/o IO): 55 ms
+	Processing time (w/o IO): 53 ms
 	Processing time (w/o IO): 55 ms
 	Processing time (w/o IO): 53 ms
+	Processing time (w/o IO): 56 ms
+	Processing time (w/o IO): 56 ms
+	Processing time (w/o IO): 58 ms
+	Processing time (w/o IO): 53 ms
 	Processing time (w/o IO): 52 ms
-	Processing time (w/o IO): 52 ms
-	  Time (mean ± σ):     386.5 ms ±   7.8 ms    [User: 685.3 ms, System: 52.6 ms]
-	  Range (min … max):   376.2 ms … 399.2 ms    10 runs
+	Processing time (w/o IO): 56 ms
+	Processing time (w/o IO): 53 ms
+	Processing time (w/o IO): 53 ms
+	Processing time (w/o IO): 56 ms
+	Processing time (w/o IO): 56 ms
+	  Time (mean ± σ):     398.1 ms ±   6.5 ms    [User: 708.4 ms, System: 53.0 ms]
+	  Range (min … max):   388.2 ms … 413.0 ms    10 runs
 	 
 Java (GraalVM):
 
 	Benchmark 1: ./target/related
-	Processing time (w/o IO): 56 ms
-	Processing time (w/o IO): 56 ms
-	Processing time (w/o IO): 56 ms
-	Processing time (w/o IO): 57 ms
-	Processing time (w/o IO): 56 ms
-	Processing time (w/o IO): 57 ms
-	Processing time (w/o IO): 57 ms
-	Processing time (w/o IO): 56 ms
-	Processing time (w/o IO): 57 ms
-	Processing time (w/o IO): 56 ms
-	Processing time (w/o IO): 57 ms
-	Processing time (w/o IO): 56 ms
-	Processing time (w/o IO): 56 ms
-	  Time (mean ± σ):     142.8 ms ±   0.9 ms    [User: 129.9 ms, System: 13.0 ms]
-	  Range (min … max):   141.2 ms … 143.9 ms    10 runs
+	Processing time (w/o IO): 50 ms
+	Processing time (w/o IO): 50 ms
+	Processing time (w/o IO): 50 ms
+	Processing time (w/o IO): 50 ms
+	Processing time (w/o IO): 50 ms
+	Processing time (w/o IO): 50 ms
+	Processing time (w/o IO): 50 ms
+	Processing time (w/o IO): 50 ms
+	Processing time (w/o IO): 50 ms
+	Processing time (w/o IO): 50 ms
+	Processing time (w/o IO): 50 ms
+	Processing time (w/o IO): 50 ms
+	Processing time (w/o IO): 50 ms
+	  Time (mean ± σ):     130.1 ms ±   0.8 ms    [User: 114.4 ms, System: 15.8 ms]
+	  Range (min … max):   128.6 ms … 131.7 ms    10 runs
 	 
 Java (GraalVM) Concurrent:
 
 	Benchmark 1: ./target/related
-	Processing time (w/o IO): 39 ms
-	Processing time (w/o IO): 39 ms
-	Processing time (w/o IO): 39 ms
-	Processing time (w/o IO): 39 ms
-	Processing time (w/o IO): 39 ms
-	Processing time (w/o IO): 38 ms
-	Processing time (w/o IO): 39 ms
-	Processing time (w/o IO): 39 ms
-	Processing time (w/o IO): 40 ms
-	Processing time (w/o IO): 39 ms
-	Processing time (w/o IO): 37 ms
-	Processing time (w/o IO): 39 ms
-	Processing time (w/o IO): 38 ms
-	  Time (mean ± σ):      68.2 ms ±   0.9 ms    [User: 112.7 ms, System: 13.5 ms]
-	  Range (min … max):    66.5 ms …  69.5 ms    10 runs
+	Processing time (w/o IO): 51 ms
+	Processing time (w/o IO): 51 ms
+	Processing time (w/o IO): 45 ms
+	Processing time (w/o IO): 49 ms
+	Processing time (w/o IO): 51 ms
+	Processing time (w/o IO): 47 ms
+	Processing time (w/o IO): 50 ms
+	Processing time (w/o IO): 52 ms
+	Processing time (w/o IO): 51 ms
+	Processing time (w/o IO): 48 ms
+	Processing time (w/o IO): 48 ms
+	Processing time (w/o IO): 46 ms
+	Processing time (w/o IO): 45 ms
+	  Time (mean ± σ):      79.2 ms ±   3.4 ms    [User: 140.5 ms, System: 12.7 ms]
+	  Range (min … max):    74.5 ms …  83.7 ms    10 runs
 	 
 Nim:
 
 	Benchmark 1: ./related
-	Processing time (w/o IO): 25.295ms
-	Processing time (w/o IO): 24.896ms
-	Processing time (w/o IO): 24.955ms
-	Processing time (w/o IO): 24.844ms
-	Processing time (w/o IO): 24.949ms
-	Processing time (w/o IO): 25.115ms
-	Processing time (w/o IO): 24.909ms
-	Processing time (w/o IO): 24.879ms
-	Processing time (w/o IO): 25.065ms
-	Processing time (w/o IO): 24.794ms
-	Processing time (w/o IO): 24.792ms
-	Processing time (w/o IO): 24.913ms
-	Processing time (w/o IO): 25.136ms
-	  Time (mean ± σ):      50.7 ms ±   0.7 ms    [User: 40.3 ms, System: 10.4 ms]
-	  Range (min … max):    49.4 ms …  51.8 ms    10 runs
+	Processing time (w/o IO): 22.112ms
+	Processing time (w/o IO): 22.098ms
+	Processing time (w/o IO): 22.2ms
+	Processing time (w/o IO): 22.197ms
+	Processing time (w/o IO): 22.114ms
+	Processing time (w/o IO): 22.082ms
+	Processing time (w/o IO): 22.001ms
+	Processing time (w/o IO): 22.133ms
+	Processing time (w/o IO): 22.082ms
+	Processing time (w/o IO): 22.077ms
+	Processing time (w/o IO): 22.095ms
+	Processing time (w/o IO): 22.001ms
+	Processing time (w/o IO): 22.078ms
+	  Time (mean ± σ):      50.6 ms ±   1.1 ms    [User: 40.6 ms, System: 10.0 ms]
+	  Range (min … max):    49.6 ms …  53.0 ms    10 runs
 	 
 Nim Concurrent:
 
 	Benchmark 1: ./build/related_con
-	Processing time (w/o IO): 16.212ms
-	Processing time (w/o IO): 15.684ms
-	Processing time (w/o IO): 15.664ms
-	Processing time (w/o IO): 17.688ms
-	Processing time (w/o IO): 15.638ms
-	Processing time (w/o IO): 15.618ms
-	Processing time (w/o IO): 16.487ms
-	Processing time (w/o IO): 17.938ms
-	Processing time (w/o IO): 15.614ms
-	Processing time (w/o IO): 18.076ms
-	Processing time (w/o IO): 17.121ms
-	Processing time (w/o IO): 18.072ms
-	Processing time (w/o IO): 16.937ms
-	  Time (mean ± σ):      42.8 ms ±   1.0 ms    [User: 78.9 ms, System: 9.4 ms]
-	  Range (min … max):    41.4 ms …  44.5 ms    10 runs
+	Processing time (w/o IO): 14.615ms
+	Processing time (w/o IO): 12.106ms
+	Processing time (w/o IO): 13.377ms
+	Processing time (w/o IO): 12.082ms
+	Processing time (w/o IO): 12.173ms
+	Processing time (w/o IO): 12.847ms
+	Processing time (w/o IO): 12.14ms
+	Processing time (w/o IO): 12.191ms
+	Processing time (w/o IO): 12.331ms
+	Processing time (w/o IO): 12.16ms
+	Processing time (w/o IO): 14.24ms
+	Processing time (w/o IO): 13.338ms
+	Processing time (w/o IO): 13.095ms
+	  Time (mean ± σ):      39.1 ms ±   1.2 ms    [User: 64.2 ms, System: 8.8 ms]
+	  Range (min … max):    37.6 ms …  41.1 ms    10 runs
 	 
 F# (JIT):
 
 	Benchmark 1: ./bin/release/net8.0/fsharp
-	Processing time (w/o IO): 91ms
-	Processing time (w/o IO): 91ms
-	Processing time (w/o IO): 94ms
 	Processing time (w/o IO): 92ms
-	Processing time (w/o IO): 92ms
+	Processing time (w/o IO): 91ms
 	Processing time (w/o IO): 91ms
 	Processing time (w/o IO): 91ms
 	Processing time (w/o IO): 92ms
 	Processing time (w/o IO): 91ms
 	Processing time (w/o IO): 91ms
+	Processing time (w/o IO): 92ms
 	Processing time (w/o IO): 91ms
+	Processing time (w/o IO): 93ms
 	Processing time (w/o IO): 91ms
 	Processing time (w/o IO): 92ms
-	  Time (mean ± σ):      1.034 s ±  0.005 s    [User: 1.138 s, System: 0.100 s]
-	  Range (min … max):    1.025 s …  1.044 s    10 runs
+	Processing time (w/o IO): 91ms
+	  Time (mean ± σ):      1.030 s ±  0.005 s    [User: 1.131 s, System: 0.105 s]
+	  Range (min … max):    1.020 s …  1.037 s    10 runs
 	 
 F# Concurrent (JIT):
 
 	Benchmark 1: ./bin/release/net8.0/fsharp_con
+	Processing time (w/o IO): 20ms
+	Processing time (w/o IO): 20ms
+	Processing time (w/o IO): 20ms
+	Processing time (w/o IO): 20ms
+	Processing time (w/o IO): 20ms
+	Processing time (w/o IO): 20ms
 	Processing time (w/o IO): 21ms
 	Processing time (w/o IO): 20ms
 	Processing time (w/o IO): 20ms
@@ -578,33 +584,27 @@ F# Concurrent (JIT):
 	Processing time (w/o IO): 20ms
 	Processing time (w/o IO): 20ms
 	Processing time (w/o IO): 20ms
-	Processing time (w/o IO): 20ms
-	Processing time (w/o IO): 20ms
-	Processing time (w/o IO): 20ms
-	Processing time (w/o IO): 20ms
-	Processing time (w/o IO): 20ms
-	Processing time (w/o IO): 24ms
-	  Time (mean ± σ):     926.0 ms ±  18.2 ms    [User: 1094.6 ms, System: 98.3 ms]
-	  Range (min … max):   880.6 ms … 949.5 ms    10 runs
+	  Time (mean ± σ):     927.1 ms ±   9.9 ms    [User: 1103.6 ms, System: 100.0 ms]
+	  Range (min … max):   909.0 ms … 941.2 ms    10 runs
 	 
 F# Concurrent (AOT):
 
 	Benchmark 1: ./bin/release/net8.0/aot/fsharp_con
 	Processing time (w/o IO): 16ms
 	Processing time (w/o IO): 15ms
-	Processing time (w/o IO): 15ms
-	Processing time (w/o IO): 15ms
+	Processing time (w/o IO): 16ms
+	Processing time (w/o IO): 16ms
+	Processing time (w/o IO): 16ms
+	Processing time (w/o IO): 16ms
 	Processing time (w/o IO): 16ms
 	Processing time (w/o IO): 15ms
-	Processing time (w/o IO): 15ms
-	Processing time (w/o IO): 15ms
-	Processing time (w/o IO): 15ms
 	Processing time (w/o IO): 16ms
-	Processing time (w/o IO): 15ms
-	Processing time (w/o IO): 15ms
 	Processing time (w/o IO): 16ms
-	  Time (mean ± σ):     715.8 ms ±   4.5 ms    [User: 785.9 ms, System: 88.3 ms]
-	  Range (min … max):   708.5 ms … 723.4 ms    10 runs
+	Processing time (w/o IO): 16ms
+	Processing time (w/o IO): 16ms
+	Processing time (w/o IO): 16ms
+	  Time (mean ± σ):     712.1 ms ±   3.9 ms    [User: 785.0 ms, System: 88.4 ms]
+	  Range (min … max):   702.9 ms … 717.5 ms    10 runs
 	 
 F# (AOT):
 
@@ -612,403 +612,403 @@ F# (AOT):
 	Processing time (w/o IO): 27ms
 	Processing time (w/o IO): 27ms
 	Processing time (w/o IO): 27ms
-	Processing time (w/o IO): 27ms
-	Processing time (w/o IO): 27ms
+	Processing time (w/o IO): 28ms
+	Processing time (w/o IO): 28ms
 	Processing time (w/o IO): 27ms
 	Processing time (w/o IO): 27ms
 	Processing time (w/o IO): 28ms
 	Processing time (w/o IO): 27ms
 	Processing time (w/o IO): 27ms
 	Processing time (w/o IO): 27ms
-	Processing time (w/o IO): 28ms
 	Processing time (w/o IO): 27ms
-	  Time (mean ± σ):     742.2 ms ±   3.2 ms    [User: 728.9 ms, System: 71.9 ms]
-	  Range (min … max):   736.5 ms … 746.5 ms    10 runs
+	Processing time (w/o IO): 27ms
+	  Time (mean ± σ):     743.8 ms ±   2.6 ms    [User: 722.0 ms, System: 80.9 ms]
+	  Range (min … max):   740.8 ms … 749.8 ms    10 runs
 	 
 C# (JIT):
 
 	Benchmark 1: ./bin/release/net8.0/jit/related
-	Processing time (w/o IO): 26.932ms
-	Processing time (w/o IO): 27.2897ms
-	Processing time (w/o IO): 27.1387ms
-	Processing time (w/o IO): 28.4626ms
-	Processing time (w/o IO): 27.5297ms
-	Processing time (w/o IO): 27.2865ms
-	Processing time (w/o IO): 27.1959ms
-	Processing time (w/o IO): 27.0432ms
-	Processing time (w/o IO): 27.0469ms
-	Processing time (w/o IO): 27.1818ms
-	Processing time (w/o IO): 27.1697ms
-	Processing time (w/o IO): 27.0051ms
-	Processing time (w/o IO): 27.217ms
-	  Time (mean ± σ):     208.8 ms ±   5.6 ms    [User: 173.7 ms, System: 27.1 ms]
-	  Range (min … max):   199.3 ms … 215.4 ms    10 runs
+	Processing time (w/o IO): 27.4487ms
+	Processing time (w/o IO): 27.6343ms
+	Processing time (w/o IO): 27.2543ms
+	Processing time (w/o IO): 28.0415ms
+	Processing time (w/o IO): 27.1603ms
+	Processing time (w/o IO): 27.3015ms
+	Processing time (w/o IO): 27.3875ms
+	Processing time (w/o IO): 27.1791ms
+	Processing time (w/o IO): 27.1917ms
+	Processing time (w/o IO): 27.3728ms
+	Processing time (w/o IO): 28.7718ms
+	Processing time (w/o IO): 27.3554ms
+	Processing time (w/o IO): 27.2491ms
+	  Time (mean ± σ):     211.1 ms ±   5.9 ms    [User: 168.2 ms, System: 35.8 ms]
+	  Range (min … max):   203.8 ms … 225.8 ms    10 runs
 	 
 C# (AOT):
 
 	Benchmark 1: ./bin/release/net8.0/aot/related
-	Processing time (w/o IO): 26.0811ms
-	Processing time (w/o IO): 27.9248ms
-	Processing time (w/o IO): 27.1203ms
-	Processing time (w/o IO): 26.4569ms
-	Processing time (w/o IO): 27.186ms
-	Processing time (w/o IO): 26.4399ms
-	Processing time (w/o IO): 26.2974ms
-	Processing time (w/o IO): 26.2832ms
-	Processing time (w/o IO): 26.5179ms
-	Processing time (w/o IO): 26.5958ms
-	Processing time (w/o IO): 26.5648ms
-	Processing time (w/o IO): 26.4617ms
-	Processing time (w/o IO): 27.9578ms
-	  Time (mean ± σ):     103.0 ms ±   2.2 ms    [User: 99.8 ms, System: 20.6 ms]
-	  Range (min … max):   100.3 ms … 107.9 ms    10 runs
+	Processing time (w/o IO): 26.1594ms
+	Processing time (w/o IO): 26.404ms
+	Processing time (w/o IO): 26.3001ms
+	Processing time (w/o IO): 26.3036ms
+	Processing time (w/o IO): 26.2237ms
+	Processing time (w/o IO): 26.3104ms
+	Processing time (w/o IO): 27.5988ms
+	Processing time (w/o IO): 26.3013ms
+	Processing time (w/o IO): 26.2976ms
+	Processing time (w/o IO): 26.3185ms
+	Processing time (w/o IO): 26.4777ms
+	Processing time (w/o IO): 26.4586ms
+	Processing time (w/o IO): 27.3448ms
+	  Time (mean ± σ):     102.5 ms ±   1.5 ms    [User: 94.6 ms, System: 25.1 ms]
+	  Range (min … max):    99.6 ms … 104.8 ms    10 runs
 	 
 C# Concurrent (JIT):
 
 	Benchmark 1: ./bin/release/net8.0/jit/related
-	Processing time (w/o IO): 13.8251ms
-	Processing time (w/o IO): 12.5806ms
-	Processing time (w/o IO): 14.5402ms
-	Processing time (w/o IO): 15.2487ms
-	Processing time (w/o IO): 13.6319ms
-	Processing time (w/o IO): 13.535ms
-	Processing time (w/o IO): 13.4187ms
-	Processing time (w/o IO): 13.6186ms
-	Processing time (w/o IO): 14.1555ms
-	Processing time (w/o IO): 13.5751ms
-	Processing time (w/o IO): 14.2561ms
-	Processing time (w/o IO): 13.7181ms
-	Processing time (w/o IO): 14.1573ms
-	  Time (mean ± σ):     198.6 ms ±   5.7 ms    [User: 197.6 ms, System: 37.4 ms]
-	  Range (min … max):   192.2 ms … 210.4 ms    10 runs
+	Processing time (w/o IO): 14.2251ms
+	Processing time (w/o IO): 13.7672ms
+	Processing time (w/o IO): 14.5257ms
+	Processing time (w/o IO): 14.7955ms
+	Processing time (w/o IO): 13.9106ms
+	Processing time (w/o IO): 14.1609ms
+	Processing time (w/o IO): 14.2015ms
+	Processing time (w/o IO): 13.9426ms
+	Processing time (w/o IO): 15.5717ms
+	Processing time (w/o IO): 13.3137ms
+	Processing time (w/o IO): 14.5977ms
+	Processing time (w/o IO): 13.2453ms
+	Processing time (w/o IO): 14.3935ms
+	  Time (mean ± σ):     204.0 ms ±  10.4 ms    [User: 208.5 ms, System: 35.7 ms]
+	  Range (min … max):   192.3 ms … 223.6 ms    10 runs
 	 
 C# Concurrent (AOT):
 
 	Benchmark 1: ./bin/release/net8.0/aot/related
-	Processing time (w/o IO): 10.9553ms
-	Processing time (w/o IO): 10.9691ms
-	Processing time (w/o IO): 11.0293ms
-	Processing time (w/o IO): 10.8345ms
-	Processing time (w/o IO): 11.0343ms
-	Processing time (w/o IO): 10.9422ms
-	Processing time (w/o IO): 10.8491ms
-	Processing time (w/o IO): 10.8785ms
-	Processing time (w/o IO): 11.0796ms
-	Processing time (w/o IO): 14.4185ms
-	Processing time (w/o IO): 10.9314ms
-	Processing time (w/o IO): 10.9319ms
-	Processing time (w/o IO): 11.5968ms
-	  Time (mean ± σ):      72.8 ms ±   2.4 ms    [User: 122.4 ms, System: 25.4 ms]
-	  Range (min … max):    70.1 ms …  77.2 ms    10 runs
+	Processing time (w/o IO): 11.5144ms
+	Processing time (w/o IO): 11.4061ms
+	Processing time (w/o IO): 11.072ms
+	Processing time (w/o IO): 11.326ms
+	Processing time (w/o IO): 11.4363ms
+	Processing time (w/o IO): 11.1402ms
+	Processing time (w/o IO): 11.1875ms
+	Processing time (w/o IO): 11.2283ms
+	Processing time (w/o IO): 12.8321ms
+	Processing time (w/o IO): 11.4141ms
+	Processing time (w/o IO): 11.3549ms
+	Processing time (w/o IO): 11.3218ms
+	Processing time (w/o IO): 11.7113ms
+	  Time (mean ± σ):      75.0 ms ±   1.6 ms    [User: 130.6 ms, System: 28.8 ms]
+	  Range (min … max):    71.4 ms …  77.7 ms    10 runs
 	 
 LuaJIT:
 
 	Benchmark 1: luajit only_lua.lua
-	Processing time (w/o IO):	92.868089675903	ms
-	Processing time (w/o IO):	107.84196853638	ms
-	Processing time (w/o IO):	106.8480014801	ms
-	Processing time (w/o IO):	107.31315612793	ms
-	Processing time (w/o IO):	117.05994606018	ms
-	Processing time (w/o IO):	115.44299125671	ms
-	Processing time (w/o IO):	91.187953948975	ms
-	Processing time (w/o IO):	114.78281021118	ms
-	Processing time (w/o IO):	110.35704612732	ms
-	Processing time (w/o IO):	92.822074890137	ms
-	Processing time (w/o IO):	116.03713035583	ms
-	Processing time (w/o IO):	118.51096153259	ms
-	Processing time (w/o IO):	115.79298973083	ms
-	  Time (mean ± σ):     372.3 ms ±  13.2 ms    [User: 350.9 ms, System: 21.3 ms]
-	  Range (min … max):   354.6 ms … 396.1 ms    10 runs
+	Processing time (w/o IO):	91.509103775024	ms
+	Processing time (w/o IO):	91.722965240479	ms
+	Processing time (w/o IO):	88.781833648682	ms
+	Processing time (w/o IO):	104.56395149231	ms
+	Processing time (w/o IO):	88.413000106812	ms
+	Processing time (w/o IO):	114.27092552185	ms
+	Processing time (w/o IO):	104.76303100586	ms
+	Processing time (w/o IO):	106.82916641235	ms
+	Processing time (w/o IO):	113.89684677124	ms
+	Processing time (w/o IO):	89.204788208008	ms
+	Processing time (w/o IO):	104.48002815247	ms
+	Processing time (w/o IO):	111.67597770691	ms
+	Processing time (w/o IO):	87.728023529053	ms
+	  Time (mean ± σ):     342.1 ms ±  10.5 ms    [User: 322.6 ms, System: 19.4 ms]
+	  Range (min … max):   327.1 ms … 357.0 ms    10 runs
 	 
 Lua:
 
 	Benchmark 1: lua only_lua.lua
-	Processing time (w/o IO):	1107.7690124512	ms
-	Processing time (w/o IO):	1108.7989807129	ms
-	Processing time (w/o IO):	1115.8139705658	ms
-	Processing time (w/o IO):	1109.0481281281	ms
-	Processing time (w/o IO):	1096.873998642	ms
-	Processing time (w/o IO):	1094.0730571747	ms
-	Processing time (w/o IO):	1097.048997879	ms
-	Processing time (w/o IO):	1093.5740470886	ms
-	Processing time (w/o IO):	1094.2251682281	ms
-	Processing time (w/o IO):	1097.7900028229	ms
-	Processing time (w/o IO):	1097.9859828949	ms
-	Processing time (w/o IO):	1092.7889347076	ms
-	Processing time (w/o IO):	1090.7709598541	ms
-	  Time (mean ± σ):      1.533 s ±  0.009 s    [User: 1.513 s, System: 0.019 s]
-	  Range (min … max):    1.518 s …  1.545 s    10 runs
+	Processing time (w/o IO):	1096.4970588684	ms
+	Processing time (w/o IO):	1092.5230979919	ms
+	Processing time (w/o IO):	1089.4448757172	ms
+	Processing time (w/o IO):	1109.5798015594	ms
+	Processing time (w/o IO):	1091.1648273468	ms
+	Processing time (w/o IO):	1091.9899940491	ms
+	Processing time (w/o IO):	1117.6180839539	ms
+	Processing time (w/o IO):	1092.0250415802	ms
+	Processing time (w/o IO):	1090.9628868103	ms
+	Processing time (w/o IO):	1092.5378799438	ms
+	Processing time (w/o IO):	1093.0409431458	ms
+	Processing time (w/o IO):	1092.9441452026	ms
+	Processing time (w/o IO):	1092.7729606628	ms
+	  Time (mean ± σ):      1.526 s ±  0.011 s    [User: 1.512 s, System: 0.013 s]
+	  Range (min … max):    1.513 s …  1.545 s    10 runs
 	 
 ocaml:
 
 	Benchmark 1: ./_build/default/bin/main.exe
-	Processing time (w/o IO): 155ms
-	Processing time (w/o IO): 149ms
-	Processing time (w/o IO): 147ms
-	Processing time (w/o IO): 150ms
-	Processing time (w/o IO): 147ms
-	Processing time (w/o IO): 148ms
-	Processing time (w/o IO): 149ms
-	Processing time (w/o IO): 149ms
-	Processing time (w/o IO): 151ms
+	Processing time (w/o IO): 146ms
 	Processing time (w/o IO): 152ms
-	Processing time (w/o IO): 151ms
-	Processing time (w/o IO): 152ms
-	Processing time (w/o IO): 151ms
-	  Time (mean ± σ):     242.4 ms ±   3.4 ms    [User: 215.4 ms, System: 26.3 ms]
-	  Range (min … max):   237.2 ms … 246.4 ms    10 runs
+	Processing time (w/o IO): 147ms
+	Processing time (w/o IO): 143ms
+	Processing time (w/o IO): 145ms
+	Processing time (w/o IO): 144ms
+	Processing time (w/o IO): 149ms
+	Processing time (w/o IO): 146ms
+	Processing time (w/o IO): 146ms
+	Processing time (w/o IO): 147ms
+	Processing time (w/o IO): 147ms
+	Processing time (w/o IO): 142ms
+	Processing time (w/o IO): 141ms
+	  Time (mean ± σ):     242.8 ms ±  35.9 ms    [User: 204.4 ms, System: 27.6 ms]
+	  Range (min … max):   225.6 ms … 344.5 ms    10 runs
 	 
 Erlang:
 
 	Benchmark 1: _build/default/bin/related_erl
-	Processing time (w/o IO): 0.905973 s
-	Processing time (w/o IO): 0.880278 s
-	Processing time (w/o IO): 0.886864 s
-	Processing time (w/o IO): 0.880899 s
-	Processing time (w/o IO): 0.889059 s
-	Processing time (w/o IO): 0.885258 s
-	Processing time (w/o IO): 0.885860 s
-	Processing time (w/o IO): 0.888604 s
-	Processing time (w/o IO): 0.886256 s
-	Processing time (w/o IO): 0.892383 s
-	Processing time (w/o IO): 0.889466 s
-	Processing time (w/o IO): 0.885777 s
-	Processing time (w/o IO): 0.879467 s
-	  Time (mean ± σ):      1.243 s ±  0.007 s    [User: 1.180 s, System: 0.097 s]
-	  Range (min … max):    1.232 s …  1.253 s    10 runs
+	Processing time (w/o IO): 0.890477 s
+	Processing time (w/o IO): 0.889413 s
+	Processing time (w/o IO): 0.895429 s
+	Processing time (w/o IO): 0.890569 s
+	Processing time (w/o IO): 0.892709 s
+	Processing time (w/o IO): 0.899460 s
+	Processing time (w/o IO): 0.880493 s
+	Processing time (w/o IO): 0.890605 s
+	Processing time (w/o IO): 0.894621 s
+	Processing time (w/o IO): 0.883641 s
+	Processing time (w/o IO): 0.881227 s
+	Processing time (w/o IO): 0.887687 s
+	Processing time (w/o IO): 0.897362 s
+	  Time (mean ± σ):      1.248 s ±  0.010 s    [User: 1.181 s, System: 0.101 s]
+	  Range (min … max):    1.235 s …  1.267 s    10 runs
 	 
 Ruby:
 
-        Benchmark 1: ruby related.rb
-        Processing time (w/o IO): 3007ms
-        Processing time (w/o IO): 3139ms
-        Processing time (w/o IO): 3025ms
-        Processing time (w/o IO): 3040ms
-        Processing time (w/o IO): 3018ms
-        Processing time (w/o IO): 3178ms
-        Processing time (w/o IO): 3006ms
-        Processing time (w/o IO): 3117ms
-        Processing time (w/o IO): 3175ms
-        Processing time (w/o IO): 3096ms
-        Processing time (w/o IO): 3005ms
-        Processing time (w/o IO): 3055ms
-        Processing time (w/o IO): 3043ms
-          Time (mean ± σ):      3.188 s ±  0.065 s    [User: 3.163 s, System: 0.024 s]
-          Range (min … max):    3.120 s …  3.293 s    10 runs
-	  
+	Benchmark 1: ruby related.rb
+	Processing time (w/o IO): 3006ms
+	Processing time (w/o IO): 3005ms
+	Processing time (w/o IO): 3070ms
+	Processing time (w/o IO): 3087ms
+	Processing time (w/o IO): 3105ms
+	Processing time (w/o IO): 3016ms
+	Processing time (w/o IO): 3005ms
+	Processing time (w/o IO): 3007ms
+	Processing time (w/o IO): 3026ms
+	Processing time (w/o IO): 3017ms
+	Processing time (w/o IO): 3015ms
+	Processing time (w/o IO): 3004ms
+	Processing time (w/o IO): 3108ms
+	  Time (mean ± σ):      3.157 s ±  0.043 s    [User: 3.131 s, System: 0.026 s]
+	  Range (min … max):    3.122 s …  3.226 s    10 runs
+	 
 Go:
 
 	Benchmark 1: ./related
-	Processing time (w/o IO): 371.261609ms
-	Processing time (w/o IO): 371.58161ms
-	Processing time (w/o IO): 372.06021ms
-	  Time (mean ± σ):     523.8 ms ±   4.0 ms    [User: 518.2 ms, System: 31.9 ms]
-	  Range (min … max):   521.0 ms … 526.6 ms    2 runs
+	Processing time (w/o IO): 323.225978ms
+	Processing time (w/o IO): 321.454368ms
+	Processing time (w/o IO): 320.511163ms
+	  Time (mean ± σ):     466.5 ms ±   1.5 ms    [User: 464.8 ms, System: 25.9 ms]
+	  Range (min … max):   465.5 ms … 467.6 ms    2 runs
 	 
 Go Concurrent:
 
 	Benchmark 1: ./related_concurrent
-	Processing time (w/o IO): 163.090684ms
-	Processing time (w/o IO): 163.707793ms
-	Processing time (w/o IO): 163.579192ms
-	  Time (mean ± σ):     323.4 ms ±  17.8 ms    [User: 791.4 ms, System: 42.0 ms]
-	  Range (min … max):   310.8 ms … 336.0 ms    2 runs
+	Processing time (w/o IO): 165.736311ms
+	Processing time (w/o IO): 165.998713ms
+	Processing time (w/o IO): 165.060508ms
+	  Time (mean ± σ):     317.1 ms ±   2.3 ms    [User: 787.0 ms, System: 41.7 ms]
+	  Range (min … max):   315.4 ms … 318.7 ms    2 runs
 	 
 Rust:
 
 	Benchmark 1: ./target/release/rust
-	Processing time (w/o IO): 342.440025ms
-	Processing time (w/o IO): 347.676608ms
-	Processing time (w/o IO): 339.669682ms
-	  Time (mean ± σ):     407.4 ms ±   7.4 ms    [User: 375.9 ms, System: 31.4 ms]
-	  Range (min … max):   402.1 ms … 412.7 ms    2 runs
+	Processing time (w/o IO): 340.773375ms
+	Processing time (w/o IO): 340.688873ms
+	Processing time (w/o IO): 340.786475ms
+	  Time (mean ± σ):     404.1 ms ±   1.6 ms    [User: 390.6 ms, System: 13.4 ms]
+	  Range (min … max):   402.9 ms … 405.2 ms    2 runs
 	 
 Rust Concurrent:
 
 	Benchmark 1: ./target/release/rust_rayon
-	Processing time (w/o IO): 174.143458ms
-	Processing time (w/o IO): 174.159059ms
-	Processing time (w/o IO): 173.56185ms
-	  Time (mean ± σ):     236.8 ms ±   0.2 ms    [User: 375.8 ms, System: 31.4 ms]
-	  Range (min … max):   236.7 ms … 236.9 ms    2 runs
+	Processing time (w/o IO): 175.603008ms
+	Processing time (w/o IO): 176.100613ms
+	Processing time (w/o IO): 174.739ms
+	  Time (mean ± σ):     240.7 ms ±   1.0 ms    [User: 389.2 ms, System: 21.6 ms]
+	  Range (min … max):   240.0 ms … 241.4 ms    2 runs
 	 
 D:
 
 	Benchmark 1: ./related
-	Processing time (w/o IO): 317.015ms
-	Processing time (w/o IO): 313.774ms
-	Processing time (w/o IO): 314.774ms
-	  Time (mean ± σ):     612.9 ms ±   1.2 ms    [User: 589.8 ms, System: 27.6 ms]
-	  Range (min … max):   612.1 ms … 613.8 ms    2 runs
+	Processing time (w/o IO): 313.737ms
+	Processing time (w/o IO): 314.316ms
+	Processing time (w/o IO): 315.731ms
+	  Time (mean ± σ):     611.0 ms ±   0.1 ms    [User: 595.9 ms, System: 19.6 ms]
+	  Range (min … max):   610.9 ms … 611.1 ms    2 runs
 	 
 D Concurrent:
 
 	Benchmark 1: ./related_concurrent
-	Processing time (w/o IO): 123.752ms
-	Processing time (w/o IO): 122.961ms
-	Processing time (w/o IO): 123.765ms
-	  Time (mean ± σ):     431.7 ms ±   8.9 ms    [User: 712.9 ms, System: 39.6 ms]
-	  Range (min … max):   425.3 ms … 438.0 ms    2 runs
+	Processing time (w/o IO): 123.993ms
+	Processing time (w/o IO): 124.01ms
+	Processing time (w/o IO): 122.117ms
+	  Time (mean ± σ):     427.6 ms ±   2.0 ms    [User: 703.4 ms, System: 43.4 ms]
+	  Range (min … max):   426.2 ms … 429.0 ms    2 runs
 	 
 C++:
 
 	Benchmark 1: ./main
-	Processing time (w/o IO): 338 ms
-	Processing time (w/o IO): 338 ms
-	Processing time (w/o IO): 337 ms
-	  Time (mean ± σ):      1.179 s ±  0.006 s    [User: 1.051 s, System: 0.123 s]
-	  Range (min … max):    1.175 s …  1.183 s    2 runs
+	Processing time (w/o IO): 322 ms
+	Processing time (w/o IO): 322 ms
+	Processing time (w/o IO): 323 ms
+	  Time (mean ± σ):      1.173 s ±  0.007 s    [User: 1.069 s, System: 0.104 s]
+	  Range (min … max):    1.168 s …  1.177 s    2 runs
 	 
 C++ Concurrent:
 
 	Benchmark 1: ./main_con
 	Processing time (w/o IO): 164 ms
-	Processing time (w/o IO): 164 ms
-	Processing time (w/o IO): 165 ms
-	  Time (mean ± σ):      1.039 s ±  0.004 s    [User: 1.386 s, System: 0.131 s]
-	  Range (min … max):    1.036 s …  1.042 s    2 runs
+	Processing time (w/o IO): 166 ms
+	Processing time (w/o IO): 163 ms
+	  Time (mean ± σ):      1.064 s ±  0.005 s    [User: 1.418 s, System: 0.125 s]
+	  Range (min … max):    1.060 s …  1.067 s    2 runs
 	 
 Python:
 
 	Benchmark 1: python3 ./related.py
-	Processing time (w/o IO): 23.451s
-	Processing time (w/o IO): 23.594s
-	  Time (abs ≡):        23.759 s               [User: 23.704 s, System: 0.047 s]
+	Processing time (w/o IO): 23.591s
+	Processing time (w/o IO): 24.320s
+	  Time (abs ≡):        24.481 s               [User: 24.421 s, System: 0.056 s]
 	 
 Numpy:
 
 	Benchmark 1: python3 ./related_np.py
-	Processing time (w/o IO): 6.143s
-	Processing time (w/o IO): 6.790s
-	Processing time (w/o IO): 7.591s
-	  Time (mean ± σ):      7.713 s ±  0.568 s    [User: 5.203 s, System: 3.106 s]
-	  Range (min … max):    7.311 s …  8.114 s    2 runs
+	Processing time (w/o IO): 6.368s
+	Processing time (w/o IO): 6.630s
+	Processing time (w/o IO): 7.470s
+	  Time (mean ± σ):      7.585 s ±  0.582 s    [User: 5.210 s, System: 2.956 s]
+	  Range (min … max):    7.174 s …  7.996 s    2 runs
 	 
 Crystal:
 
 	Benchmark 1: ./crystal
-	Processing time (w/o IO): 909.852969ms
-	Processing time (w/o IO): 907.657933ms
-	Processing time (w/o IO): 910.076873ms
-	  Time (mean ± σ):      1.135 s ±  0.013 s    [User: 1.085 s, System: 0.042 s]
-	  Range (min … max):    1.125 s …  1.144 s    2 runs
+	Processing time (w/o IO): 917.245814ms
+	Processing time (w/o IO): 917.511617ms
+	Processing time (w/o IO): 908.296129ms
+	  Time (mean ± σ):      1.142 s ±  0.024 s    [User: 1.084 s, System: 0.041 s]
+	  Range (min … max):    1.125 s …  1.159 s    2 runs
 	 
 Zig:
 
 	Benchmark 1: ./main
-	Processing time (w/o IO): 336ms
-	Processing time (w/o IO): 338ms
-	Processing time (w/o IO): 337ms
-	  Time (mean ± σ):     530.7 ms ±   0.3 ms    [User: 509.2 ms, System: 21.4 ms]
-	  Range (min … max):   530.4 ms … 530.9 ms    2 runs
+	Processing time (w/o IO): 340ms
+	Processing time (w/o IO): 339ms
+	Processing time (w/o IO): 340ms
+	  Time (mean ± σ):     534.3 ms ±   2.0 ms    [User: 506.7 ms, System: 27.6 ms]
+	  Range (min … max):   533.0 ms … 535.7 ms    2 runs
 	 
 Julia:
 
 	Benchmark 1: julia --project=Related -e "using Related; main()"
-	Processing time (w/o IO): 482 milliseconds
-	Processing time (w/o IO): 482 milliseconds
-	Processing time (w/o IO): 481 milliseconds
-	  Time (mean ± σ):      1.637 s ±  0.007 s    [User: 1.476 s, System: 0.264 s]
-	  Range (min … max):    1.632 s …  1.642 s    2 runs
+	Processing time (w/o IO): 364 milliseconds
+	Processing time (w/o IO): 364 milliseconds
+	Processing time (w/o IO): 364 milliseconds
+	  Time (mean ± σ):      3.790 s ±  0.008 s    [User: 3.594 s, System: 0.298 s]
+	  Range (min … max):    3.785 s …  3.796 s    2 runs
 	 
 Julia HO:
 
 	Benchmark 1: julia --project=RelatedHO -e "using RelatedHO; main()"
-	Processing time (w/o IO): 60 milliseconds
-	Processing time (w/o IO): 58 milliseconds
-	Processing time (w/o IO): 58 milliseconds
-	  Time (mean ± σ):      1.183 s ±  0.002 s    [User: 1.011 s, System: 0.275 s]
-	  Range (min … max):    1.181 s …  1.185 s    2 runs
+	Processing time (w/o IO): 51 milliseconds
+	Processing time (w/o IO): 55 milliseconds
+	Processing time (w/o IO): 57 milliseconds
+	  Time (mean ± σ):      1.166 s ±  0.026 s    [User: 1.012 s, System: 0.258 s]
+	  Range (min … max):    1.148 s …  1.185 s    2 runs
 	 
 Julia Concurrent:
 
 	Benchmark 1: julia --threads=auto --project=RelatedCon -e "using RelatedCon; main()"
-	Processing time (w/o IO): 232 milliseconds
-	Processing time (w/o IO): 224 milliseconds
-	Processing time (w/o IO): 222 milliseconds
-	  Time (mean ± σ):     899.6 ms ±  20.3 ms    [User: 1418.1 ms, System: 237.7 ms]
-	  Range (min … max):   885.2 ms … 914.0 ms    2 runs
+	Processing time (w/o IO): 223 milliseconds
+	Processing time (w/o IO): 172 milliseconds
+	Processing time (w/o IO): 170 milliseconds
+	  Time (mean ± σ):      3.790 s ±  0.012 s    [User: 5.686 s, System: 0.302 s]
+	  Range (min … max):    3.781 s …  3.798 s    2 runs
 	 
 Odin:
 
 	Benchmark 1: ./related
-	Processing time (w/o IO):  691.934371ms
-	Processing time (w/o IO):  689.993742ms
-	Processing time (w/o IO):  689.939941ms
-	  Time (mean ± σ):      1.479 s ±  0.006 s    [User: 1.437 s, System: 0.039 s]
-	  Range (min … max):    1.475 s …  1.484 s    2 runs
+	Processing time (w/o IO):  573.070534ms
+	Processing time (w/o IO):  576.999768ms
+	Processing time (w/o IO):  574.180944ms
+	  Time (mean ± σ):      1.371 s ±  0.001 s    [User: 1.336 s, System: 0.033 s]
+	  Range (min … max):    1.370 s …  1.372 s    2 runs
 	 
 Vlang:
 
 	Benchmark 1: ./related
-	Processing time (w/o IO): 740.116ms
-	Processing time (w/o IO): 742.206ms
-	Processing time (w/o IO): 740.422ms
-	  Time (mean ± σ):     10.255 s ±  0.377 s    [User: 10.108 s, System: 0.143 s]
-	  Range (min … max):    9.989 s … 10.522 s    2 runs
+	Processing time (w/o IO): 743.296ms
+	Processing time (w/o IO): 742.184ms
+	Processing time (w/o IO): 741.521ms
+	  Time (mean ± σ):     10.792 s ±  0.084 s    [User: 10.643 s, System: 0.145 s]
+	  Range (min … max):   10.732 s … 10.851 s    2 runs
 	 
 Dart VM:
 
 	Benchmark 1: dart related.dart
-	Processing time (w/o IO): 2050ms
-	Processing time (w/o IO): 2068ms
-	Processing time (w/o IO): 2236ms
-	  Time (mean ± σ):      2.837 s ±  0.114 s    [User: 3.009 s, System: 0.173 s]
-	  Range (min … max):    2.756 s …  2.918 s    2 runs
+	Processing time (w/o IO): 2261ms
+	Processing time (w/o IO): 2242ms
+	Processing time (w/o IO): 2059ms
+	  Time (mean ± σ):      2.849 s ±  0.123 s    [User: 3.061 s, System: 0.160 s]
+	  Range (min … max):    2.761 s …  2.936 s    2 runs
 	 
 Dart AOT:
 
 	Benchmark 1: ./related
-	Processing time (w/o IO): 2013ms
-	Processing time (w/o IO): 2008ms
 	Processing time (w/o IO): 2003ms
-	  Time (mean ± σ):      2.494 s ±  0.003 s    [User: 2.439 s, System: 0.079 s]
-	  Range (min … max):    2.491 s …  2.496 s    2 runs
+	Processing time (w/o IO): 2013ms
+	Processing time (w/o IO): 2015ms
+	  Time (mean ± σ):      2.502 s ±  0.002 s    [User: 2.460 s, System: 0.059 s]
+	  Range (min … max):    2.500 s …  2.503 s    2 runs
 	 
 Swift:
 
 	Benchmark 1: ./.build/release/related
-	Processing time (w/o IO): 712.8250598907471ms
-	Processing time (w/o IO): 710.2330923080444ms
-	Processing time (w/o IO): 717.602014541626ms
-	  Time (mean ± σ):      2.114 s ±  0.017 s    [User: 1.953 s, System: 0.128 s]
-	  Range (min … max):    2.102 s …  2.126 s    2 runs
+	Processing time (w/o IO): 716.2140607833862ms
+	Processing time (w/o IO): 718.7420129776001ms
+	Processing time (w/o IO): 716.0060405731201ms
+	  Time (mean ± σ):      2.158 s ±  0.014 s    [User: 1.947 s, System: 0.161 s]
+	  Range (min … max):    2.148 s …  2.168 s    2 runs
 	 
 Swift Concurrent:
 
 	Benchmark 1: ./.build/release/related
-	Processing time (w/o IO): 393.045472ms
-	Processing time (w/o IO): 391.681652ms
-	Processing time (w/o IO): 393.778183ms
-	  Time (mean ± σ):      1.811 s ±  0.003 s    [User: 2.776 s, System: 0.148 s]
-	  Range (min … max):    1.809 s …  1.813 s    2 runs
+	Processing time (w/o IO): 394.652301ms
+	Processing time (w/o IO): 394.089091ms
+	Processing time (w/o IO): 393.876942ms
+	  Time (mean ± σ):      1.860 s ±  0.005 s    [User: 2.812 s, System: 0.149 s]
+	  Range (min … max):    1.857 s …  1.864 s    2 runs
 	 
 JS (Node):
 
 	Benchmark 1: node node.js
-	Processing time (w/o IO): 2480ms
-	Processing time (w/o IO): 2617ms
-	Processing time (w/o IO): 2608ms
-	  Time (mean ± σ):      2.947 s ±  0.018 s    [User: 2.941 s, System: 0.109 s]
-	  Range (min … max):    2.934 s …  2.960 s    2 runs
+	Processing time (w/o IO): 2614ms
+	Processing time (w/o IO): 1654ms
+	Processing time (w/o IO): 2615ms
+	  Time (mean ± σ):      2.473 s ±  0.673 s    [User: 2.473 s, System: 0.102 s]
+	  Range (min … max):    1.998 s …  2.949 s    2 runs
 	 
 JS (Bun):
 
 	Benchmark 1: bun bun.js
-	Processing time (w/o IO): 1434ms
-	Processing time (w/o IO): 1767ms
-	Processing time (w/o IO): 1760ms
-	  Time (mean ± σ):      1.928 s ±  0.004 s    [User: 1.928 s, System: 0.074 s]
-	  Range (min … max):    1.925 s …  1.931 s    2 runs
+	Processing time (w/o IO): 1418ms
+	Processing time (w/o IO): 1528ms
+	Processing time (w/o IO): 1527ms
+	  Time (mean ± σ):      1.686 s ±  0.002 s    [User: 1.697 s, System: 0.063 s]
+	  Range (min … max):    1.684 s …  1.688 s    2 runs
 	 
 JS (Deno):
 
 	Benchmark 1: deno run --allow-read --allow-write deno.js
 	Processing time (w/o IO): 2030ms
 	Processing time (w/o IO): 1808ms
-	Processing time (w/o IO): 1812ms
-	  Time (mean ± σ):      2.178 s ±  0.252 s    [User: 1.949 s, System: 0.076 s]
-	  Range (min … max):    2.000 s …  2.356 s    2 runs
+	Processing time (w/o IO): 1805ms
+	  Time (mean ± σ):      1.991 s ±  0.015 s    [User: 1.950 s, System: 0.061 s]
+	  Range (min … max):    1.980 s …  2.001 s    2 runs
 	 
 Java (JIT):
 
@@ -1016,232 +1016,232 @@ Java (JIT):
 Java (GraalVM):
 
 	Benchmark 1: ./target/related
-	Processing time (w/o IO): 641 ms
-	Processing time (w/o IO): 637 ms
-	Processing time (w/o IO): 638 ms
-	  Time (mean ± σ):      1.379 s ±  0.000 s    [User: 1.319 s, System: 0.058 s]
-	  Range (min … max):    1.379 s …  1.379 s    2 runs
+	Processing time (w/o IO): 747 ms
+	Processing time (w/o IO): 744 ms
+	Processing time (w/o IO): 745 ms
+	  Time (mean ± σ):      1.594 s ±  0.004 s    [User: 1.552 s, System: 0.040 s]
+	  Range (min … max):    1.591 s …  1.597 s    2 runs
 	 
 Java (GraalVM) Concurrent:
 
 	Benchmark 1: ./target/related
-	Processing time (w/o IO): 464 ms
+	Processing time (w/o IO): 465 ms
 	Processing time (w/o IO): 462 ms
-	Processing time (w/o IO): 464 ms
-	  Time (mean ± σ):     559.3 ms ±   1.8 ms    [User: 1282.1 ms, System: 39.4 ms]
-	  Range (min … max):   558.0 ms … 560.6 ms    2 runs
+	Processing time (w/o IO): 461 ms
+	  Time (mean ± σ):     560.1 ms ±   2.4 ms    [User: 1291.3 ms, System: 31.5 ms]
+	  Range (min … max):   558.4 ms … 561.8 ms    2 runs
 	 
 Nim:
 
 	Benchmark 1: ./related
-	Processing time (w/o IO): 350.073ms
-	Processing time (w/o IO): 348.983ms
-	Processing time (w/o IO): 346.98ms
-	  Time (mean ± σ):     450.0 ms ±   1.9 ms    [User: 416.2 ms, System: 33.6 ms]
-	  Range (min … max):   448.6 ms … 451.3 ms    2 runs
+	Processing time (w/o IO): 317.858ms
+	Processing time (w/o IO): 317.054ms
+	Processing time (w/o IO): 319.269ms
+	  Time (mean ± σ):     438.8 ms ±   6.1 ms    [User: 404.1 ms, System: 33.5 ms]
+	  Range (min … max):   434.5 ms … 443.1 ms    2 runs
 	 
 Nim Concurrent:
 
 	Benchmark 1: ./build/related_con
-	Processing time (w/o IO): 222.605ms
-	Processing time (w/o IO): 223.483ms
-	Processing time (w/o IO): 220.654ms
-	  Time (mean ± σ):     331.1 ms ±   1.2 ms    [User: 939.6 ms, System: 39.5 ms]
-	  Range (min … max):   330.3 ms … 332.0 ms    2 runs
+	Processing time (w/o IO): 172.536ms
+	Processing time (w/o IO): 171.188ms
+	Processing time (w/o IO): 170.731ms
+	  Time (mean ± σ):     281.3 ms ±   1.6 ms    [User: 744.2 ms, System: 35.3 ms]
+	  Range (min … max):   280.2 ms … 282.5 ms    2 runs
 	 
 F# (JIT):
 
 	Benchmark 1: ./bin/release/net8.0/fsharp
-	Processing time (w/o IO): 527ms
+	Processing time (w/o IO): 531ms
 	Processing time (w/o IO): 528ms
 	Processing time (w/o IO): 528ms
-	  Time (mean ± σ):      3.294 s ±  0.023 s    [User: 3.253 s, System: 0.289 s]
-	  Range (min … max):    3.278 s …  3.310 s    2 runs
+	  Time (mean ± σ):      3.256 s ±  0.005 s    [User: 3.254 s, System: 0.241 s]
+	  Range (min … max):    3.253 s …  3.260 s    2 runs
 	 
 F# Concurrent (JIT):
 
 	Benchmark 1: ./bin/release/net8.0/fsharp_con
-	Processing time (w/o IO): 274ms
+	Processing time (w/o IO): 285ms
 	Processing time (w/o IO): 277ms
-	Processing time (w/o IO): 277ms
-	  Time (mean ± σ):      2.733 s ±  0.068 s    [User: 4.303 s, System: 0.290 s]
-	  Range (min … max):    2.685 s …  2.781 s    2 runs
+	Processing time (w/o IO): 278ms
+	  Time (mean ± σ):      2.651 s ±  0.005 s    [User: 4.259 s, System: 0.249 s]
+	  Range (min … max):    2.647 s …  2.654 s    2 runs
 	 
 F# Concurrent (AOT):
 
 	Benchmark 1: ./bin/release/net8.0/aot/fsharp_con
-	Processing time (w/o IO): 230ms
-	Processing time (w/o IO): 232ms
 	Processing time (w/o IO): 231ms
-	  Time (mean ± σ):      3.153 s ±  0.014 s    [User: 4.474 s, System: 0.281 s]
-	  Range (min … max):    3.143 s …  3.163 s    2 runs
+	Processing time (w/o IO): 231ms
+	Processing time (w/o IO): 232ms
+	  Time (mean ± σ):      3.070 s ±  0.003 s    [User: 4.400 s, System: 0.243 s]
+	  Range (min … max):    3.068 s …  3.072 s    2 runs
 	 
 F# (AOT):
 
 	Benchmark 1: ./bin/release/net8.0/aot/fsharp
-	Processing time (w/o IO): 390ms
-	Processing time (w/o IO): 390ms
 	Processing time (w/o IO): 391ms
-	  Time (mean ± σ):      3.502 s ±  0.003 s    [User: 3.392 s, System: 0.296 s]
-	  Range (min … max):    3.500 s …  3.505 s    2 runs
+	Processing time (w/o IO): 390ms
+	Processing time (w/o IO): 390ms
+	  Time (mean ± σ):      3.438 s ±  0.001 s    [User: 3.363 s, System: 0.269 s]
+	  Range (min … max):    3.438 s …  3.438 s    2 runs
 	 
 C# (JIT):
 
 	Benchmark 1: ./bin/release/net8.0/jit/related
-	Processing time (w/o IO): 372.5301ms
-	Processing time (w/o IO): 376.3393ms
-	Processing time (w/o IO): 374.318ms
-	  Time (mean ± σ):      1.076 s ±  0.002 s    [User: 1.019 s, System: 0.075 s]
-	  Range (min … max):    1.075 s …  1.077 s    2 runs
+	Processing time (w/o IO): 377.1119ms
+	Processing time (w/o IO): 374.9292ms
+	Processing time (w/o IO): 373.9491ms
+	  Time (mean ± σ):      1.091 s ±  0.004 s    [User: 1.010 s, System: 0.088 s]
+	  Range (min … max):    1.087 s …  1.094 s    2 runs
 	 
 C# (AOT):
 
 	Benchmark 1: ./bin/release/net8.0/aot/related
-	Processing time (w/o IO): 374.1335ms
-	Processing time (w/o IO): 370.8822ms
-	Processing time (w/o IO): 370.6862ms
-	  Time (mean ± σ):     915.9 ms ±   7.5 ms    [User: 889.0 ms, System: 59.8 ms]
-	  Range (min … max):   910.6 ms … 921.2 ms    2 runs
+	Processing time (w/o IO): 369.5336ms
+	Processing time (w/o IO): 374.5408ms
+	Processing time (w/o IO): 371.8048ms
+	  Time (mean ± σ):     914.9 ms ±   2.9 ms    [User: 892.4 ms, System: 55.6 ms]
+	  Range (min … max):   912.8 ms … 916.9 ms    2 runs
 	 
 C# Concurrent (JIT):
 
 	Benchmark 1: ./bin/release/net8.0/jit/related
-	Processing time (w/o IO): 122.6418ms
-	Processing time (w/o IO): 121.8597ms
-	Processing time (w/o IO): 122.3883ms
-	  Time (mean ± σ):     580.2 ms ±   4.5 ms    [User: 1203.9 ms, System: 63.4 ms]
-	  Range (min … max):   577.0 ms … 583.4 ms    2 runs
+	Processing time (w/o IO): 123.2136ms
+	Processing time (w/o IO): 128.0367ms
+	Processing time (w/o IO): 121.865ms
+	  Time (mean ± σ):     586.3 ms ±   2.4 ms    [User: 1191.6 ms, System: 75.5 ms]
+	  Range (min … max):   584.6 ms … 588.0 ms    2 runs
 	 
 C# Concurrent (AOT):
 
 	Benchmark 1: ./bin/release/net8.0/aot/related
-	Processing time (w/o IO): 135.9345ms
-	Processing time (w/o IO): 137.1741ms
-	Processing time (w/o IO): 136.3761ms
-	  Time (mean ± σ):     442.4 ms ±   4.6 ms    [User: 1176.5 ms, System: 71.6 ms]
-	  Range (min … max):   439.1 ms … 445.6 ms    2 runs
+	Processing time (w/o IO): 141.7982ms
+	Processing time (w/o IO): 141.7808ms
+	Processing time (w/o IO): 142.579ms
+	  Time (mean ± σ):     452.6 ms ±   1.7 ms    [User: 1232.6 ms, System: 66.8 ms]
+	  Range (min … max):   451.4 ms … 453.9 ms    2 runs
 	 
 LuaJIT:
 
 	Benchmark 1: luajit only_lua.lua
-	Processing time (w/o IO):	1458.5711956024	ms
-	Processing time (w/o IO):	1460.7028961182	ms
-	Processing time (w/o IO):	1403.4740924835	ms
-	  Time (mean ± σ):      2.753 s ±  0.054 s    [User: 2.680 s, System: 0.072 s]
-	  Range (min … max):    2.715 s …  2.791 s    2 runs
+	Processing time (w/o IO):	1166.5840148926	ms
+	Processing time (w/o IO):	1178.0600547791	ms
+	Processing time (w/o IO):	1169.8770523071	ms
+	  Time (mean ± σ):      2.491 s ±  0.032 s    [User: 2.429 s, System: 0.059 s]
+	  Range (min … max):    2.468 s …  2.514 s    2 runs
 	 
 Lua:
 
 	Benchmark 1: lua only_lua.lua
-	Processing time (w/o IO):	16721.554994583	ms
-	Processing time (w/o IO):	16958.912134171	ms
-	  Time (abs ≡):        18.863 s               [User: 18.815 s, System: 0.043 s]
+	Processing time (w/o IO):	16739.398956299	ms
+	Processing time (w/o IO):	16757.182121277	ms
+	  Time (abs ≡):        18.663 s               [User: 18.597 s, System: 0.063 s]
 	 
 ocaml:
 
 	Benchmark 1: ./_build/default/bin/main.exe
-	Processing time (w/o IO): 2651ms
-	Processing time (w/o IO): 2710ms
-	Processing time (w/o IO): 2740ms
-	  Time (mean ± σ):      3.149 s ±  0.016 s    [User: 3.002 s, System: 0.145 s]
-	  Range (min … max):    3.138 s …  3.160 s    2 runs
+	Processing time (w/o IO): 2758ms
+	Processing time (w/o IO): 2627ms
+	Processing time (w/o IO): 2635ms
+	  Time (mean ± σ):      3.044 s ±  0.006 s    [User: 2.911 s, System: 0.132 s]
+	  Range (min … max):    3.040 s …  3.049 s    2 runs
 	 
 Erlang:
 
 	Benchmark 1: _build/default/bin/related_erl
-	Processing time (w/o IO): 14.778721 s
-	Processing time (w/o IO): 14.703586 s
-	Processing time (w/o IO): 14.746790 s
-	  Time (mean ± σ):     15.780 s ±  0.036 s    [User: 15.560 s, System: 0.275 s]
-	  Range (min … max):   15.754 s … 15.806 s    2 runs
+	Processing time (w/o IO): 14.491722 s
+	Processing time (w/o IO): 14.451996 s
+	Processing time (w/o IO): 14.574810 s
+	  Time (mean ± σ):     15.562 s ±  0.087 s    [User: 15.365 s, System: 0.246 s]
+	  Range (min … max):   15.500 s … 15.623 s    2 runs
 	 
 Ruby:
 
-        Benchmark 1: ruby related.rb
-        Processing time (w/o IO): 47681ms
-        Processing time (w/o IO): 48392ms
-        Processing time (w/o IO): 47741ms
-          Time (mean ± σ):     48.356 s ±  0.457 s    [User: 48.268 s, System: 0.082 s]
-          Range (min … max):   48.033 s … 48.679 s    2 runs
-
+	Benchmark 1: ruby related.rb
+	Processing time (w/o IO): 47504ms
+	Processing time (w/o IO): 47461ms
+	Processing time (w/o IO): 47853ms
+	  Time (mean ± σ):     47.959 s ±  0.278 s    [User: 47.881 s, System: 0.071 s]
+	  Range (min … max):   47.762 s … 48.156 s    2 runs
+	 
 Go:
 
 	Benchmark 1: ./related
-	Processing time (w/o IO): 3.276757723s
-	Processing time (w/o IO): 3.271337729s
-	Processing time (w/o IO): 3.266043154s
-	  Time (mean ± σ):      3.765 s ±  0.002 s    [User: 3.770 s, System: 0.122 s]
-	  Range (min … max):    3.763 s …  3.767 s    2 runs
+	Processing time (w/o IO): 2.854833616s
+	Processing time (w/o IO): 2.855201631s
+	Processing time (w/o IO): 2.852497347s
+	  Time (mean ± σ):      3.367 s ±  0.008 s    [User: 3.389 s, System: 0.104 s]
+	  Range (min … max):    3.361 s …  3.373 s    2 runs
 	 
 Go Concurrent:
 
 	Benchmark 1: ./related_concurrent
-	Processing time (w/o IO): 1.41622092s
-	Processing time (w/o IO): 1.426060612s
-	Processing time (w/o IO): 1.424938034s
-	  Time (mean ± σ):      1.906 s ±  0.002 s    [User: 6.135 s, System: 0.131 s]
-	  Range (min … max):    1.905 s …  1.908 s    2 runs
+	Processing time (w/o IO): 1.423275017s
+	Processing time (w/o IO): 1.414575106s
+	Processing time (w/o IO): 1.426015351s
+	  Time (mean ± σ):      1.893 s ±  0.020 s    [User: 6.116 s, System: 0.109 s]
+	  Range (min … max):    1.878 s …  1.907 s    2 runs
 	 
 Rust:
 
 	Benchmark 1: ./target/release/rust
-	Processing time (w/o IO): 3.042634707s
-	Processing time (w/o IO): 3.038035919s
-	Processing time (w/o IO): 3.037225403s
-	  Time (mean ± σ):      3.251 s ±  0.004 s    [User: 3.165 s, System: 0.077 s]
-	  Range (min … max):    3.248 s …  3.253 s    2 runs
+	Processing time (w/o IO): 3.030940992s
+	Processing time (w/o IO): 3.031815569s
+	Processing time (w/o IO): 3.047464363s
+	  Time (mean ± σ):      3.249 s ±  0.007 s    [User: 3.159 s, System: 0.082 s]
+	  Range (min … max):    3.243 s …  3.254 s    2 runs
 	 
 Rust Concurrent:
 
 	Benchmark 1: ./target/release/rust_rayon
-	Processing time (w/o IO): 1.52215252s
-	Processing time (w/o IO): 1.516426709s
-	Processing time (w/o IO): 1.519437003s
-	  Time (mean ± σ):      1.779 s ±  0.070 s    [User: 3.152 s, System: 0.075 s]
-	  Range (min … max):    1.729 s …  1.828 s    2 runs
+	Processing time (w/o IO): 1.520579053s
+	Processing time (w/o IO): 1.514469963s
+	Processing time (w/o IO): 1.516619995s
+	  Time (mean ± σ):      1.775 s ±  0.072 s    [User: 3.141 s, System: 0.083 s]
+	  Range (min … max):    1.724 s …  1.826 s    2 runs
 	 
 D:
 
 	Benchmark 1: ./related
-	Processing time (w/o IO): 2701.68ms
-	Processing time (w/o IO): 2706.41ms
-	Processing time (w/o IO): 2696.49ms
-	  Time (mean ± σ):      3.644 s ±  0.004 s    [User: 3.532 s, System: 0.119 s]
-	  Range (min … max):    3.641 s …  3.647 s    2 runs
+	Processing time (w/o IO): 2701.58ms
+	Processing time (w/o IO): 2709.58ms
+	Processing time (w/o IO): 2700.61ms
+	  Time (mean ± σ):      3.651 s ±  0.014 s    [User: 3.539 s, System: 0.116 s]
+	  Range (min … max):    3.641 s …  3.660 s    2 runs
 	 
 D Concurrent:
 
 	Benchmark 1: ./related_concurrent
-	Processing time (w/o IO): 983.585ms
-	Processing time (w/o IO): 971.27ms
-	Processing time (w/o IO): 975.88ms
-	  Time (mean ± σ):      1.902 s ±  0.005 s    [User: 4.507 s, System: 0.108 s]
-	  Range (min … max):    1.899 s …  1.906 s    2 runs
+	Processing time (w/o IO): 972.278ms
+	Processing time (w/o IO): 971.793ms
+	Processing time (w/o IO): 969.725ms
+	  Time (mean ± σ):      1.901 s ±  0.008 s    [User: 4.503 s, System: 0.107 s]
+	  Range (min … max):    1.895 s …  1.906 s    2 runs
 	 
 C++:
 
 	Benchmark 1: ./main
-	Processing time (w/o IO): 2941 ms
-	Processing time (w/o IO): 2912 ms
-	Processing time (w/o IO): 2921 ms
-	  Time (mean ± σ):      5.635 s ±  0.064 s    [User: 5.060 s, System: 0.336 s]
-	  Range (min … max):    5.589 s …  5.680 s    2 runs
+	Processing time (w/o IO): 2792 ms
+	Processing time (w/o IO): 2782 ms
+	Processing time (w/o IO): 2785 ms
+	  Time (mean ± σ):      5.401 s ±  0.004 s    [User: 4.920 s, System: 0.286 s]
+	  Range (min … max):    5.398 s …  5.404 s    2 runs
 	 
 C++ Concurrent:
 
 	Benchmark 1: ./main_con
-	Processing time (w/o IO): 1404 ms
+	Processing time (w/o IO): 1408 ms
+	Processing time (w/o IO): 1402 ms
 	Processing time (w/o IO): 1405 ms
-	Processing time (w/o IO): 1409 ms
-	  Time (mean ± σ):      4.151 s ±  0.080 s    [User: 7.825 s, System: 0.340 s]
-	  Range (min … max):    4.094 s …  4.208 s    2 runs
+	  Time (mean ± σ):      4.246 s ±  0.042 s    [User: 7.884 s, System: 0.332 s]
+	  Range (min … max):    4.217 s …  4.276 s    2 runs
 	 
 Python:
 
 	Benchmark 1: python3 ./related.py
-	Processing time (w/o IO): 212.901s
-	Processing time (w/o IO): 213.059s
-	  Time (abs ≡):        213.550 s               [User: 213.395 s, System: 0.131 s]
+	Processing time (w/o IO): 213.627s
+	Processing time (w/o IO): 215.072s
+	  Time (abs ≡):        215.502 s               [User: 215.347 s, System: 0.123 s]
 	 
 Numpy:
 
@@ -1249,128 +1249,128 @@ Numpy:
 Crystal:
 
 	Benchmark 1: ./crystal
-	Processing time (w/o IO): 7985.387073ms
-	Processing time (w/o IO): 7979.129002ms
-	Processing time (w/o IO): 8021.42835ms
-	  Time (mean ± σ):      8.740 s ±  0.021 s    [User: 8.609 s, System: 0.121 s]
-	  Range (min … max):    8.725 s …  8.756 s    2 runs
+	Processing time (w/o IO): 8000.874789ms
+	Processing time (w/o IO): 7987.847422ms
+	Processing time (w/o IO): 7985.37062ms
+	  Time (mean ± σ):      8.711 s ±  0.003 s    [User: 8.622 s, System: 0.081 s]
+	  Range (min … max):    8.709 s …  8.713 s    2 runs
 	 
 Zig:
 
 	Benchmark 1: ./main
-	Processing time (w/o IO): 3023ms
-	Processing time (w/o IO): 3022ms
-	Processing time (w/o IO): 3018ms
-	  Time (mean ± σ):      3.620 s ±  0.009 s    [User: 3.549 s, System: 0.065 s]
-	  Range (min … max):    3.614 s …  3.627 s    2 runs
+	Processing time (w/o IO): 3012ms
+	Processing time (w/o IO): 3010ms
+	Processing time (w/o IO): 3015ms
+	  Time (mean ± σ):      3.609 s ±  0.005 s    [User: 3.553 s, System: 0.049 s]
+	  Range (min … max):    3.605 s …  3.612 s    2 runs
 	 
 Julia:
 
 	Benchmark 1: julia --project=Related -e "using Related; main()"
-	Processing time (w/o IO): 4216 milliseconds
-	Processing time (w/o IO): 4225 milliseconds
-	Processing time (w/o IO): 4216 milliseconds
-	  Time (mean ± σ):      5.679 s ±  0.009 s    [User: 5.467 s, System: 0.308 s]
-	  Range (min … max):    5.672 s …  5.686 s    2 runs
+	Processing time (w/o IO): 4223 milliseconds
+	Processing time (w/o IO): 4215 milliseconds
+	Processing time (w/o IO): 4220 milliseconds
+	  Time (mean ± σ):      7.946 s ±  0.010 s    [User: 7.701 s, System: 0.340 s]
+	  Range (min … max):    7.939 s …  7.954 s    2 runs
 	 
 Julia HO:
 
 	Benchmark 1: julia --project=RelatedHO -e "using RelatedHO; main()"
-	Processing time (w/o IO): 139 milliseconds
 	Processing time (w/o IO): 143 milliseconds
-	Processing time (w/o IO): 148 milliseconds
-	  Time (mean ± σ):      1.621 s ±  0.023 s    [User: 1.385 s, System: 0.337 s]
-	  Range (min … max):    1.605 s …  1.638 s    2 runs
+	Processing time (w/o IO): 141 milliseconds
+	Processing time (w/o IO): 147 milliseconds
+	  Time (mean ± σ):      1.701 s ±  0.070 s    [User: 1.397 s, System: 0.345 s]
+	  Range (min … max):    1.652 s …  1.750 s    2 runs
 	 
 Julia Concurrent:
 
 	Benchmark 1: julia --threads=auto --project=RelatedCon -e "using RelatedCon; main()"
-	Processing time (w/o IO): 1942 milliseconds
-	Processing time (w/o IO): 1940 milliseconds
-	Processing time (w/o IO): 1935 milliseconds
-	  Time (mean ± σ):      2.946 s ±  0.022 s    [User: 8.506 s, System: 0.307 s]
-	  Range (min … max):    2.931 s …  2.961 s    2 runs
+	Processing time (w/o IO): 1874 milliseconds
+	Processing time (w/o IO): 1906 milliseconds
+	Processing time (w/o IO): 1478 milliseconds
+	  Time (mean ± σ):      5.656 s ±  0.352 s    [User: 11.814 s, System: 0.395 s]
+	  Range (min … max):    5.408 s …  5.905 s    2 runs
 	 
 Odin:
 
 	Benchmark 1: ./related
-	Processing time (w/o IO):  6.075223354s
-	Processing time (w/o IO):  6.119290193s
-	Processing time (w/o IO):  6.065278975s
-	  Time (mean ± σ):      8.493 s ±  0.042 s    [User: 8.399 s, System: 0.083 s]
-	  Range (min … max):    8.464 s …  8.523 s    2 runs
+	Processing time (w/o IO):  5.044533161s
+	Processing time (w/o IO):  5.067190225s
+	Processing time (w/o IO):  5.040336101s
+	  Time (mean ± σ):      7.440 s ±  0.013 s    [User: 7.346 s, System: 0.085 s]
+	  Range (min … max):    7.431 s …  7.450 s    2 runs
 	 
 Vlang:
 
 	Benchmark 1: ./related
-	Processing time (w/o IO): 6.592s
-	Processing time (w/o IO): 6.593s
-	Processing time (w/o IO): 6.595s
-	  Time (mean ± σ):     81.249 s ±  1.189 s    [User: 80.856 s, System: 0.377 s]
-	  Range (min … max):   80.409 s … 82.090 s    2 runs
+	Processing time (w/o IO): 6.585s
+	Processing time (w/o IO): 6.585s
+	Processing time (w/o IO): 6.586s
+	  Time (mean ± σ):     84.122 s ±  0.006 s    [User: 83.700 s, System: 0.408 s]
+	  Range (min … max):   84.118 s … 84.127 s    2 runs
 	 
 Dart VM:
 
 	Benchmark 1: dart related.dart
-	Processing time (w/o IO): 19689ms
-	Processing time (w/o IO): 19653ms
-	Processing time (w/o IO): 19684ms
-	  Time (mean ± σ):     21.179 s ±  0.008 s    [User: 21.386 s, System: 0.259 s]
-	  Range (min … max):   21.173 s … 21.185 s    2 runs
+	Processing time (w/o IO): 19661ms
+	Processing time (w/o IO): 19640ms
+	Processing time (w/o IO): 19654ms
+	  Time (mean ± σ):     21.136 s ±  0.013 s    [User: 21.370 s, System: 0.224 s]
+	  Range (min … max):   21.127 s … 21.146 s    2 runs
 	 
 Dart AOT:
 
 	Benchmark 1: ./related
-	Processing time (w/o IO): 17872ms
-	Processing time (w/o IO): 17825ms
-	Processing time (w/o IO): 17815ms
-	  Time (mean ± σ):     19.317 s ±  0.041 s    [User: 19.294 s, System: 0.154 s]
-	  Range (min … max):   19.288 s … 19.346 s    2 runs
+	Processing time (w/o IO): 17855ms
+	Processing time (w/o IO): 17859ms
+	Processing time (w/o IO): 17841ms
+	  Time (mean ± σ):     19.373 s ±  0.029 s    [User: 19.355 s, System: 0.151 s]
+	  Range (min … max):   19.352 s … 19.393 s    2 runs
 	 
 Swift:
 
 	Benchmark 1: ./.build/release/related
-	Processing time (w/o IO): 6226.530909538269ms
-	Processing time (w/o IO): 6198.652982711792ms
-	Processing time (w/o IO): 6193.397998809814ms
-	  Time (mean ± σ):     10.494 s ±  0.000 s    [User: 9.990 s, System: 0.337 s]
-	  Range (min … max):   10.494 s … 10.494 s    2 runs
+	Processing time (w/o IO): 6226.067066192627ms
+	Processing time (w/o IO): 6179.121971130371ms
+	Processing time (w/o IO): 6183.452010154724ms
+	  Time (mean ± σ):     10.523 s ±  0.027 s    [User: 10.011 s, System: 0.337 s]
+	  Range (min … max):   10.504 s … 10.541 s    2 runs
 	 
 Swift Concurrent:
 
 	Benchmark 1: ./.build/release/related
-	Processing time (w/o IO): 3471.181286ms
-	Processing time (w/o IO): 3469.481924ms
-	Processing time (w/o IO): 3472.140255ms
-	  Time (mean ± σ):      7.860 s ±  0.063 s    [User: 17.629 s, System: 0.351 s]
-	  Range (min … max):    7.816 s …  7.904 s    2 runs
+	Processing time (w/o IO): 3431.176583ms
+	Processing time (w/o IO): 3462.780973ms
+	Processing time (w/o IO): 3458.942524ms
+	  Time (mean ± σ):      7.855 s ±  0.075 s    [User: 17.549 s, System: 0.382 s]
+	  Range (min … max):    7.802 s …  7.908 s    2 runs
 	 
 JS (Node):
 
 	Benchmark 1: node node.js
-	Processing time (w/o IO): 22906ms
-	Processing time (w/o IO): 18644ms
-	Processing time (w/o IO): 18577ms
-	  Time (mean ± σ):     19.450 s ±  0.055 s    [User: 19.469 s, System: 0.175 s]
-	  Range (min … max):   19.411 s … 19.489 s    2 runs
+	Processing time (w/o IO): 18669ms
+	Processing time (w/o IO): 14289ms
+	Processing time (w/o IO): 14348ms
+	  Time (mean ± σ):     15.141 s ±  0.045 s    [User: 15.130 s, System: 0.194 s]
+	  Range (min … max):   15.109 s … 15.172 s    2 runs
 	 
 JS (Bun):
 
 	Benchmark 1: bun bun.js
-	Processing time (w/o IO): 13290ms
-	Processing time (w/o IO): 14033ms
-	Processing time (w/o IO): 12160ms
-	  Time (mean ± σ):     13.541 s ±  1.335 s    [User: 13.551 s, System: 0.128 s]
-	  Range (min … max):   12.597 s … 14.485 s    2 runs
+	Processing time (w/o IO): 15350ms
+	Processing time (w/o IO): 11123ms
+	Processing time (w/o IO): 12935ms
+	  Time (mean ± σ):     12.470 s ±  1.276 s    [User: 12.475 s, System: 0.134 s]
+	  Range (min … max):   11.568 s … 13.372 s    2 runs
 	 
 JS (Deno):
 
 	Benchmark 1: deno run --allow-read --allow-write deno.js
-	Processing time (w/o IO): 15856ms
-	Processing time (w/o IO): 15895ms
-	Processing time (w/o IO): 15889ms
-	  Time (mean ± σ):     16.370 s ±  0.012 s    [User: 16.399 s, System: 0.163 s]
-	  Range (min … max):   16.362 s … 16.379 s    2 runs
+	Processing time (w/o IO): 15891ms
+	Processing time (w/o IO): 17919ms
+	Processing time (w/o IO): 17877ms
+	  Time (mean ± σ):     18.544 s ±  0.246 s    [User: 18.396 s, System: 0.176 s]
+	  Range (min … max):   18.370 s … 18.717 s    2 runs
 	 
 Java (JIT):
 
@@ -1378,151 +1378,151 @@ Java (JIT):
 Java (GraalVM):
 
 	Benchmark 1: ./target/related
-	Processing time (w/o IO): 7513 ms
-	Processing time (w/o IO): 7516 ms
-	Processing time (w/o IO): 7515 ms
-	  Time (mean ± σ):     15.483 s ±  0.001 s    [User: 15.369 s, System: 0.103 s]
-	  Range (min … max):   15.482 s … 15.483 s    2 runs
+	Processing time (w/o IO): 5551 ms
+	Processing time (w/o IO): 5558 ms
+	Processing time (w/o IO): 5540 ms
+	  Time (mean ± σ):     11.595 s ±  0.005 s    [User: 11.471 s, System: 0.115 s]
+	  Range (min … max):   11.592 s … 11.599 s    2 runs
 	 
 Java (GraalVM) Concurrent:
 
 	Benchmark 1: ./target/related
-	Processing time (w/o IO): 5319 ms
-	Processing time (w/o IO): 5320 ms
-	Processing time (w/o IO): 5333 ms
-	  Time (mean ± σ):      5.669 s ±  0.005 s    [User: 14.220 s, System: 0.107 s]
-	  Range (min … max):    5.665 s …  5.672 s    2 runs
+	Processing time (w/o IO): 4129 ms
+	Processing time (w/o IO): 4121 ms
+	Processing time (w/o IO): 4122 ms
+	  Time (mean ± σ):      4.477 s ±  0.003 s    [User: 11.040 s, System: 0.114 s]
+	  Range (min … max):    4.475 s …  4.479 s    2 runs
 	 
 Nim:
 
 	Benchmark 1: ./related
-	Processing time (w/o IO): 3065.158ms
-	Processing time (w/o IO): 3069.82ms
-	Processing time (w/o IO): 3064.214ms
-	  Time (mean ± σ):      3.419 s ±  0.005 s    [User: 3.311 s, System: 0.100 s]
-	  Range (min … max):    3.416 s …  3.422 s    2 runs
+	Processing time (w/o IO): 2846.723ms
+	Processing time (w/o IO): 2843.795ms
+	Processing time (w/o IO): 2842.767ms
+	  Time (mean ± σ):      3.245 s ±  0.004 s    [User: 3.152 s, System: 0.083 s]
+	  Range (min … max):    3.242 s …  3.248 s    2 runs
 	 
 Nim Concurrent:
 
 	Benchmark 1: ./build/related_con
-	Processing time (w/o IO): 1992.509ms
-	Processing time (w/o IO): 1993.008ms
-	Processing time (w/o IO): 1993.778ms
-	  Time (mean ± σ):      2.375 s ±  0.009 s    [User: 8.165 s, System: 0.117 s]
-	  Range (min … max):    2.369 s …  2.381 s    2 runs
+	Processing time (w/o IO): 1476.093ms
+	Processing time (w/o IO): 1474.345ms
+	Processing time (w/o IO): 1475.683ms
+	  Time (mean ± σ):      1.851 s ±  0.013 s    [User: 6.122 s, System: 0.105 s]
+	  Range (min … max):    1.841 s …  1.860 s    2 runs
 	 
 F# (JIT):
 
 	Benchmark 1: ./bin/release/net8.0/fsharp
-	Processing time (w/o IO): 4044ms
-	Processing time (w/o IO): 4045ms
 	Processing time (w/o IO): 4046ms
-	  Time (mean ± σ):     13.422 s ±  0.004 s    [User: 14.401 s, System: 0.584 s]
-	  Range (min … max):   13.419 s … 13.424 s    2 runs
+	Processing time (w/o IO): 4039ms
+	Processing time (w/o IO): 4048ms
+	  Time (mean ± σ):     13.351 s ±  0.074 s    [User: 14.278 s, System: 0.571 s]
+	  Range (min … max):   13.298 s … 13.403 s    2 runs
 	 
 F# Concurrent (JIT):
 
 	Benchmark 1: ./bin/release/net8.0/fsharp_con
-	Processing time (w/o IO): 2403ms
-	Processing time (w/o IO): 2407ms
-	Processing time (w/o IO): 2514ms
-	  Time (mean ± σ):     10.138 s ±  0.145 s    [User: 25.717 s, System: 0.545 s]
-	  Range (min … max):   10.035 s … 10.241 s    2 runs
+	Processing time (w/o IO): 2483ms
+	Processing time (w/o IO): 2507ms
+	Processing time (w/o IO): 2396ms
+	  Time (mean ± σ):     10.179 s ±  0.096 s    [User: 25.650 s, System: 0.549 s]
+	  Range (min … max):   10.111 s … 10.247 s    2 runs
 	 
 F# Concurrent (AOT):
 
 	Benchmark 1: ./bin/release/net8.0/aot/fsharp_con
+	Processing time (w/o IO): 2027ms
 	Processing time (w/o IO): 2026ms
-	Processing time (w/o IO): 2027ms
-	Processing time (w/o IO): 2027ms
-	  Time (mean ± σ):     12.099 s ±  0.034 s    [User: 25.162 s, System: 0.606 s]
-	  Range (min … max):   12.075 s … 12.123 s    2 runs
+	Processing time (w/o IO): 2026ms
+	  Time (mean ± σ):     12.102 s ±  0.052 s    [User: 25.280 s, System: 0.607 s]
+	  Range (min … max):   12.065 s … 12.139 s    2 runs
 	 
 F# (AOT):
 
 	Benchmark 1: ./bin/release/net8.0/aot/fsharp
-	Processing time (w/o IO): 3417ms
-	Processing time (w/o IO): 3413ms
-	Processing time (w/o IO): 3408ms
-	  Time (mean ± σ):     15.018 s ±  0.002 s    [User: 16.267 s, System: 0.557 s]
-	  Range (min … max):   15.017 s … 15.019 s    2 runs
+	Processing time (w/o IO): 3411ms
+	Processing time (w/o IO): 3414ms
+	Processing time (w/o IO): 3411ms
+	  Time (mean ± σ):     15.007 s ±  0.034 s    [User: 16.520 s, System: 0.505 s]
+	  Range (min … max):   14.983 s … 15.031 s    2 runs
 	 
 C# (JIT):
 
 	Benchmark 1: ./bin/release/net8.0/jit/related
-	Processing time (w/o IO): 3260.4185ms
-	Processing time (w/o IO): 3260.0179ms
-	Processing time (w/o IO): 3249.4561ms
-	  Time (mean ± σ):      7.378 s ±  0.010 s    [User: 7.328 s, System: 0.168 s]
-	  Range (min … max):    7.371 s …  7.385 s    2 runs
+	Processing time (w/o IO): 3315.7881ms
+	Processing time (w/o IO): 3265.3917ms
+	Processing time (w/o IO): 3250.5808ms
+	  Time (mean ± σ):      7.386 s ±  0.023 s    [User: 7.362 s, System: 0.151 s]
+	  Range (min … max):    7.370 s …  7.403 s    2 runs
 	 
 C# (AOT):
 
 	Benchmark 1: ./bin/release/net8.0/aot/related
-	Processing time (w/o IO): 3244.2899ms
-	Processing time (w/o IO): 3247.2025ms
-	Processing time (w/o IO): 3239.5416ms
-	  Time (mean ± σ):      7.023 s ±  0.017 s    [User: 6.992 s, System: 0.155 s]
-	  Range (min … max):    7.010 s …  7.035 s    2 runs
+	Processing time (w/o IO): 3251.5075ms
+	Processing time (w/o IO): 3245.3474ms
+	Processing time (w/o IO): 3246.3182ms
+	  Time (mean ± σ):      7.033 s ±  0.015 s    [User: 6.987 s, System: 0.191 s]
+	  Range (min … max):    7.022 s …  7.043 s    2 runs
 	 
 C# Concurrent (JIT):
 
 	Benchmark 1: ./bin/release/net8.0/jit/related
-	Processing time (w/o IO): 1011.9496ms
-	Processing time (w/o IO): 1011.7039ms
-	Processing time (w/o IO): 1008.027ms
-	  Time (mean ± σ):      2.906 s ±  0.027 s    [User: 8.622 s, System: 0.181 s]
-	  Range (min … max):    2.886 s …  2.925 s    2 runs
+	Processing time (w/o IO): 1015.227ms
+	Processing time (w/o IO): 1013.6227ms
+	Processing time (w/o IO): 1007.4484ms
+	  Time (mean ± σ):      2.909 s ±  0.006 s    [User: 8.666 s, System: 0.155 s]
+	  Range (min … max):    2.905 s …  2.913 s    2 runs
 	 
 C# Concurrent (AOT):
 
 	Benchmark 1: ./bin/release/net8.0/aot/related
-	Processing time (w/o IO): 1131.5864ms
-	Processing time (w/o IO): 1133.3848ms
-	Processing time (w/o IO): 1131.4683ms
-	  Time (mean ± σ):      2.780 s ±  0.021 s    [User: 9.332 s, System: 0.168 s]
-	  Range (min … max):    2.765 s …  2.795 s    2 runs
+	Processing time (w/o IO): 1195.9344ms
+	Processing time (w/o IO): 1196.516ms
+	Processing time (w/o IO): 1188.095ms
+	  Time (mean ± σ):      2.910 s ±  0.008 s    [User: 9.818 s, System: 0.164 s]
+	  Range (min … max):    2.904 s …  2.915 s    2 runs
 	 
 LuaJIT:
 
 	Benchmark 1: luajit only_lua.lua
-	Processing time (w/o IO):	11961.282968521	ms
-	Processing time (w/o IO):	12054.555892944	ms
-	Processing time (w/o IO):	12415.471792221	ms
-	  Time (mean ± σ):     16.439 s ±  0.222 s    [User: 16.259 s, System: 0.175 s]
-	  Range (min … max):   16.282 s … 16.596 s    2 runs
+	Processing time (w/o IO):	13067.625999451	ms
+	Processing time (w/o IO):	13135.457992554	ms
+	Processing time (w/o IO):	9803.722858429	ms
+	  Time (mean ± σ):     15.706 s ±  2.237 s    [User: 15.517 s, System: 0.180 s]
+	  Range (min … max):   14.124 s … 17.287 s    2 runs
 	 
 Lua:
 
 	Benchmark 1: lua only_lua.lua
-	Processing time (w/o IO):	149907.64403343	ms
-	Processing time (w/o IO):	149998.30102921	ms
-	  Time (abs ≡):        156.465 s               [User: 156.232 s, System: 0.216 s]
+	Processing time (w/o IO):	150035.57491302	ms
+	Processing time (w/o IO):	149707.57603645	ms
+	  Time (abs ≡):        156.667 s               [User: 156.444 s, System: 0.203 s]
 	 
 ocaml:
 
 	Benchmark 1: ./_build/default/bin/main.exe
-	Processing time (w/o IO): 33480ms
-	Processing time (w/o IO): 33474ms
-	Processing time (w/o IO): 34032ms
-	  Time (mean ± σ):     35.238 s ±  0.406 s    [User: 34.496 s, System: 0.730 s]
-	  Range (min … max):   34.951 s … 35.525 s    2 runs
+	Processing time (w/o IO): 36596ms
+	Processing time (w/o IO): 36157ms
+	Processing time (w/o IO): 36504ms
+	  Time (mean ± σ):     37.915 s ±  0.278 s    [User: 37.110 s, System: 0.794 s]
+	  Range (min … max):   37.718 s … 38.111 s    2 runs
 	 
 Erlang:
 
 	Benchmark 1: _build/default/bin/related_erl
-	Processing time (w/o IO): 133.076075 s
-	Processing time (w/o IO): 131.978154 s
-	Processing time (w/o IO): 131.616317 s
-	  Time (mean ± σ):     134.642 s ±  0.214 s    [User: 133.891 s, System: 0.812 s]
-	  Range (min … max):   134.491 s … 134.793 s    2 runs
+	Processing time (w/o IO): 137.357316 s
+	Processing time (w/o IO): 136.215720 s
+	Processing time (w/o IO): 133.322323 s
+	  Time (mean ± σ):     138.003 s ±  2.024 s    [User: 137.208 s, System: 0.851 s]
+	  Range (min … max):   136.572 s … 139.434 s    2 runs
 	 
 Ruby:
 
-        Benchmark 1: ruby related.rb
-        Processing time (w/o IO): 434895ms
-        Processing time (w/o IO): 430766ms
-        Processing time (w/o IO): 456764ms
-          Time (mean ± σ):     444.566 s ± 18.382 s    [User: 444.383 s, System: 0.143 s]
-          Range (min … max):   431.568 s … 457.564 s    2 runs
-
+	Benchmark 1: ruby related.rb
+	Processing time (w/o IO): 427663ms
+	Processing time (w/o IO): 429837ms
+	Processing time (w/o IO): 425916ms
+	  Time (mean ± σ):     428.673 s ±  2.787 s    [User: 428.485 s, System: 0.151 s]
+	  Range (min … max):   426.703 s … 430.644 s    2 runs
+	 
